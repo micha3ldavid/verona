@@ -1,0 +1,29 @@
+{
+  "name": "verona",
+  "version": "1.0.0",
+  "description": "Static small business site for Verona Clothing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/micha3ldavid/verona.git"
+  },
+  "author": "Michael David",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micha3ldavid/verona/issues"
+  },
+  "homepage": "https://github.com/micha3ldavid/verona#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.1",
+    "font-awesome": "^4.7.0",
+    "pug": "^2.0.0-beta11"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
