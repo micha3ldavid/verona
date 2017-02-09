@@ -3,7 +3,7 @@ var gulp  = require('gulp'),
 	sass  = require('gulp-sass');
 	paths = {
 		'style': {
-			sass: './app/scss/*.scss',
+			sass: './dist/scss/*.scss',
 			output: './dist/css'
 		}
 	};
