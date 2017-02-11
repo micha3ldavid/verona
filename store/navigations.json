@@ -1,0 +1,73 @@
+{
+    "main":
+    [
+        {
+            "name": "vision",
+            "label": "Vision",
+            "path": "/vision",
+            "classname": ""
+        },
+        {
+            "name": "men",
+            "label": "Men",
+            "path": "/men",
+            "classname": ""
+        },
+        {
+            "name": "women",
+            "label": "Women",
+            "path": "/women",
+            "classname": ""
+        },
+        {
+            "name": "customs",
+            "label": "Customs",
+            "path": "/customs",
+            "classname": ""
+        }
+    ],
+
+    "social":
+    [
+        {
+            "name": "instagram",
+            "label": "Instagram",
+            "path": "http://instagram.com/veronacreative",
+            "classname": "fa fa-instagram"
+        },
+        {
+            "name": "twitter",
+            "label": "Twitter",
+            "path": "http://twitter.com/veronacreative",
+            "classname": "fa fa-twitter"
+        },
+        {
+            "name": "facebook",
+            "label": "Facebook",
+            "path": "http://facebook.com/veronacreative",
+            "classname": "fa fa-facebook-official"
+        }
+    ],
+
+    "footer":
+    [
+        {
+            "name": "contact",
+            "label": "Contact",
+            "path": "/contact",
+            "classname": ""
+        },
+        {
+            "name": "collaborate",
+            "label": "collaborate",
+            "path": "/collaborate",
+            "classname": ""
+        },
+        {
+            "name": "terms",
+            "label": "Terms of Use",
+            "path": "/terms",
+            "classname": ""
+        }
+    ]
+}
