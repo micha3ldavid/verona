@@ -1,0 +1,113 @@
+
+.jheader {
+    background: $brand-secondary;
+    position: fixed;
+    height: 95px;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.jheader-title {
+    margin: ($grid-gutter-width / 2) 0 5px 0;
+    text-align: center;
+}
+
+.jheader-logo {
+    width: 150px;
+}
+
+.jheader-nav,
+.jheader-social {
+    @extend .list-inline;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.jheader-nav li + li {
+    margin-left: ($grid-gutter-width / 2);
+}
+
+.jheader-nav li a,
+.jheader-social li a,
+.jheader-mobilenav li a,
+.jheader-mobile {
+    color: #fff;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $brand-primary;
+    }
+}
+
+.jheader-social {
+    position: absolute;
+    right: 15px;
+    top: 28px;
+}
+
+.jheader-mobile {
+    position: absolute;
+    top: 22px;
+    left: -200px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.jheader-mobilenav {
+    background: #333;
+    margin: 0;
+    height: 300px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    transition: height 0.5s;
+    width: 100%;
+
+    &[aria-hidden="true"] {
+        height: 0;
+    }
+
+    > li {
+        border-top: 1px solid #000;
+        list-style: none;
+        text-align: center;
+    }
+
+    > li:first-child {
+        border-top-width: 0;
+    }
+
+    > li a {
+        display: block;
+        padding: 8px 0;
+    }
+}
+
+@media all and (min-width: $screen-xs-max) {
+    .jheader-mobilenav {
+        height: 0;
+    }
+}
+
+@media all and (max-width: $screen-xs-max) {
+
+    .jheader {
+        height: 76px;
+    }
+
+    .jheader-nav {
+        display: none;
+    }
+
+    .jheader-social {
+        right: -200px;
+        opacity: 0;
+    }
+
+    .jheader-mobile {
+        left: 15px;
+        opacity: 1;
+    }
+}

@@ -32,19 +32,19 @@
         {
             "name": "instagram",
             "label": "Instagram",
-            "path": "http://instagram.com/veronacreative",
+            "path": "http://instagram.com/julianocreative",
             "classname": "fa fa-instagram"
         },
         {
             "name": "twitter",
             "label": "Twitter",
-            "path": "http://twitter.com/veronacreative",
+            "path": "http://twitter.com/julianocreative",
             "classname": "fa fa-twitter"
         },
         {
             "name": "facebook",
             "label": "Facebook",
-            "path": "http://facebook.com/veronacreative",
+            "path": "http://facebook.com/julianocreative",
             "classname": "fa fa-facebook-official"
         }
     ],
