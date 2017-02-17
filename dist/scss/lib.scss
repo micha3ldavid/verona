@@ -3,32 +3,64 @@
 @import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "./node_modules/font-awesome/scss/font-awesome";
 
-
-html body a {
+html body a,
+html body button {
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+    }
 }
 
-.navbar-brand {
-    display: block;
+.xheader {
+    background: $brand-secondary;
+    position: fixed;
+    width: 100%;
 }
 
-.navbar-slogan {
-    display: block;
-    font-size: 14px;
+.xheader-title {
+    margin: ($grid-gutter-width / 2) 0;
+    text-align: center;
 }
 
-.nav-social {
+.xheader-logo {
+    width: 150px;
+}
+
+.xheader-nav,
+.xheader-social {
+    @extend .list-inline;
+    text-align: center;
+}
+
+.xheader-nav li + li {
+    margin-left: ($grid-gutter-width / 2);
+}
+
+.xheader-nav li a,
+.xheader-social li a,
+.xheader-mobile {
+    color: #fff;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $brand-primary;
+    }
+}
+
+.xheader-social {
     position: absolute;
-    right: $grid-gutter-width;
-    top: 0;
+    right: 15px;
+    top: 28px;
+}
 
-    li a {
-        color: #999;
-    }
-
-    .fa {
-        font-size: 18px;
-    }
+.xheader-mobile {
+    position: absolute;
+    top: 18px;
+    left: 15px;
 }

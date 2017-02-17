@@ -1193,7 +1193,7 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 46px; }
+  font-size: 28px; }
 
 h2, .h2 {
   font-size: 38px; }
@@ -1350,11 +1350,13 @@ ol {
   padding-left: 0;
   list-style: none; }
 
-.list-inline {
+.list-inline, .xheader-nav,
+.xheader-social {
   padding-left: 0;
   list-style: none;
   margin-left: -5px; }
-  .list-inline > li {
+  .list-inline > li, .xheader-nav > li,
+  .xheader-social > li {
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px; }
@@ -5985,7 +5987,7 @@ button.close {
   font-size: 2em; }
 
 .fa-inverse {
-  color: #fff; }
+  color: #000; }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
@@ -8143,23 +8145,55 @@ button.close {
   overflow: visible;
   clip: auto; }
 
-html body a {
+html body a,
+html body button {
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s; }
+  html body a:hover, html body a:active, html body a:focus,
+  html body button:hover,
+  html body button:active,
+  html body button:focus {
+    text-decoration: none; }
 
-.navbar-brand {
-  display: block; }
+.xheader {
+  background: black;
+  position: fixed;
+  width: 100%; }
 
-.navbar-slogan {
-  display: block;
-  font-size: 14px; }
+.xheader-title {
+  margin: 15px 0;
+  text-align: center; }
 
-.nav-social {
+.xheader-logo {
+  width: 150px; }
+
+.xheader-nav,
+.xheader-social {
+  text-align: center; }
+
+.xheader-nav li + li {
+  margin-left: 15px; }
+
+.xheader-nav li a,
+.xheader-social li a,
+.xheader-mobile {
+  color: #fff; }
+  .xheader-nav li a:hover, .xheader-nav li a:active, .xheader-nav li a:focus,
+  .xheader-social li a:hover,
+  .xheader-social li a:active,
+  .xheader-social li a:focus,
+  .xheader-mobile:hover,
+  .xheader-mobile:active,
+  .xheader-mobile:focus {
+    color: crimson; }
+
+.xheader-social {
   position: absolute;
-  right: 30px;
-  top: 0; }
-  .nav-social li a {
-    color: #999; }
-  .nav-social .fa {
-    font-size: 18px; }
+  right: 15px;
+  top: 28px; }
+
+.xheader-mobile {
+  position: absolute;
+  top: 18px;
+  left: 15px; }
