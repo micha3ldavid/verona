@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", type="text/css", href="/dist/css/lib.css")
+        link(rel="stylesheet", type="text/css", href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300")
+        title
+            | JULIANO STREETWEAR - #{title}
+    body
+        include header
+        block content
+        include footer
+        script(type="text/javascript", src="/node_modules/mk-ui/dist/js/core.min.js")
+        script(type="text/javascript", src="/dist/js/nav.js")
+        block scripts

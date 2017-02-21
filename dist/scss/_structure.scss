@@ -1,0 +1,11 @@
+
+body {
+    min-height: 100vh;
+    padding-top: 95px;
+}
+
+@media all and (max-width: $screen-xs-max) {
+    body {
+        padding-top: 76px;
+    }
+}

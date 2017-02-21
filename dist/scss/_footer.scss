@@ -1,0 +1,30 @@
+
+.jfooter {
+    background: $brand-secondary;
+    padding: $grid-gutter-width / 2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.jfooter-menu {
+    @extend .list-inline;
+    text-align: center;
+}
+
+.jfooter-menu > li > a {
+    color: #fff;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $brand-primary;
+    }
+}
+
+.jfooter .legal {
+    color: #fff;
+    font-size: 80%;
+    margin: 0;
+    text-align: center;
+}

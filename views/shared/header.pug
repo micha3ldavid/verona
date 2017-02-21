@@ -26,22 +26,3 @@ header.jheader
                 a(href=social.path, target="_blank")
                     span(role="presentation", class=social.classname)
                     span.sr-only #{social.label}
-
-//-
-
-    header.navbar.navbar-default
-        div.container-fluid
-            div.navbar-header
-                a.navbar-brand(href="/")
-                    img(src="dist/img/logo.svg")
-            div.navbar-collapse.collapse
-                ul.nav.navbar-nav.navbar-right
-                    each page in navigations.main
-                        li
-                            a(href=page.path) #{page.label}
-                ul.nav-social.list-inline
-                    each social in navigations.social
-                        li
-                            a(href=social.path, target="_blank")
-                                span(role="presentation", class=social.classname)
-                                span.sr-only #{social.label}

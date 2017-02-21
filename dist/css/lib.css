@@ -1351,12 +1351,12 @@ ol {
   list-style: none; }
 
 .list-inline, .jheader-nav,
-.jheader-social {
+.jheader-social, .jfooter-menu {
   padding-left: 0;
   list-style: none;
   margin-left: -5px; }
   .list-inline > li, .jheader-nav > li,
-  .jheader-social > li {
+  .jheader-social > li, .jfooter-menu > li {
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px; }
@@ -8145,12 +8145,21 @@ button.close {
   overflow: visible;
   clip: auto; }
 
+body {
+  min-height: 100vh;
+  padding-top: 95px; }
+
+@media all and (max-width: 767px) {
+  body {
+    padding-top: 76px; } }
+
 .jheader {
   background: black;
   position: fixed;
   height: 95px;
   width: 100%;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  top: 0; }
 
 .jheader-title {
   margin: 15px 0 5px 0;
@@ -8233,6 +8242,27 @@ button.close {
   .jheader-mobile {
     left: 15px;
     opacity: 1; } }
+
+.jfooter {
+  background: black;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+
+.jfooter-menu {
+  text-align: center; }
+
+.jfooter-menu > li > a {
+  color: #fff; }
+  .jfooter-menu > li > a:hover, .jfooter-menu > li > a:active, .jfooter-menu > li > a:focus {
+    color: crimson; }
+
+.jfooter .legal {
+  color: #fff;
+  font-size: 80%;
+  margin: 0;
+  text-align: center; }
 
 html body a,
 html body button {

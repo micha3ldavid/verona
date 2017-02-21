@@ -1,0 +1,8 @@
+
+footer.jfooter
+    ul.jfooter-menu
+        each link in navigations.footer
+            li
+                a(href=link.path) #{link.label}
+    p.legal
+        | &copy; Copyright Juliano Creative 2017
