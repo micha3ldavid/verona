@@ -8149,6 +8149,9 @@ body {
   min-height: 100vh;
   padding-top: 95px; }
 
+#main {
+  padding: 15px 0; }
+
 @media all and (max-width: 767px) {
   body {
     padding-top: 76px; } }
@@ -8159,7 +8162,8 @@ body {
   height: 95px;
   width: 100%;
   transition: all 0.5s;
-  top: 0; }
+  top: 0;
+  z-index: 1; }
 
 .jheader-title {
   margin: 15px 0 5px 0;
@@ -8246,8 +8250,6 @@ body {
 .jfooter {
   background: black;
   padding: 15px;
-  position: fixed;
-  bottom: 0;
   width: 100%; }
 
 .jfooter-menu {
@@ -8274,3 +8276,45 @@ html body button {
   html body button:active,
   html body button:focus {
     text-decoration: none; }
+
+.card {
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+  padding: 5px; }
+
+.card-figure {
+  position: relative;
+  /* image format should always be 2:3 */
+  padding-top: 150%; }
+
+.card-img {
+  border: 1px solid #999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.card-link {
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.4;
+  width: 100%;
+  transition: all 0.5s; }
+  .card-link:hover, .card-link:active, .card-link:focus {
+    opacity: 0; }
+
+.card-title {
+  font-size: 22px;
+  margin: 10px 0 5px; }
+
+.card-desc {
+  font-size: 14px;
+  margin: 0 0 5px; }
+
+.card-details {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 0 5px; }

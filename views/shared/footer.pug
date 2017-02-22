@@ -4,5 +4,12 @@ footer.jfooter
         each link in navigations.footer
             li
                 a(href=link.path) #{link.label}
+    ul.jfooter-menu
+        each social in navigations.social
+            li
+                a(href=social.path, target="_blank")
+                    span(role="presentation", class=social.classname)
+                    span.sr-only #{social.label}
+
     p.legal
         | &copy; Copyright Juliano Creative 2017

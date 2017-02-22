@@ -4,6 +4,10 @@ body {
     padding-top: 95px;
 }
 
+#main {
+    padding: ($grid-gutter-width / 2) 0;
+}
+
 @media all and (max-width: $screen-xs-max) {
     body {
         padding-top: 76px;

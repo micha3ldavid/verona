@@ -3,7 +3,8 @@ var fs = require('fs'),
 	path = require('path');
 
 var keys = {
-    navigations: "navigations.json"
+    navigations: "navigations.json",
+	details: "details.json"
 };
 
 function error (err, file) {
@@ -40,5 +41,8 @@ module.exports = {
 				cb(JSON.parse(data));
 		    });
         }
+		else {
+			cb(me.error('No key found for ' + key, key));
+		}
     }
 };

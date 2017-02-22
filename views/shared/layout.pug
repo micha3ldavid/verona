@@ -8,7 +8,8 @@ html
             | JULIANO STREETWEAR - #{title}
     body
         include header
-        block content
+        div#main(role="main")
+            block content
         include footer
         script(type="text/javascript", src="/node_modules/mk-ui/dist/js/core.min.js")
         script(type="text/javascript", src="/dist/js/nav.js")

@@ -19,14 +19,19 @@ module.exports = function (express, app) {
     //
     // HOME
     // ----------------------------------
+
     app.get('/', function (req, res) {
 
         pullNavs(function (data) {
 
-            data.title = "Home";
-            data.page  = '/';
+            store.pull('details', function (details) {
 
-            res.render('index', data);
+                data.details = details;
+                data.title = "Home";
+                data.page  = '/';
+
+                res.render('index', data);
+            });
         });
     });
 
