@@ -1,18 +1,12 @@
 
-.card {
-    background-color: #fff;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
-    padding: 5px;
-}
-
 .card-figure {
+    overflow: hidden;
     position: relative;
-    /* image format should always be 2:3 */
-    padding-top: 150%;
+    /* image format should always be 4:6 */
+    padding-top: 120%;
 }
 
 .card-img {
-    border: 1px solid #999;
     position: absolute;
     top: 0;
     left: 0;
@@ -37,17 +31,18 @@
 }
 
 .card-title {
-    font-size: 22px;
+    border-top: 2px solid $brand-secondary;
+    font-size: $font-size-h3;
     margin: 10px 0 5px;
+    padding-top: 5px;
 }
 
 .card-desc {
-    font-size: 14px;
     margin: 0 0 5px;
 }
 
 .card-details {
     display: inline-block;
-    font-size: 14px;
+    font-size: $font-size-small;
     margin: 0 0 5px;
 }

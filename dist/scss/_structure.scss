@@ -1,15 +1,19 @@
 
+html,
 body {
-    min-height: 100vh;
-    padding-top: 95px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-#main {
-    padding: ($grid-gutter-width / 2) 0;
+#app {
+    min-height: 100vh;
+    padding-top: 95px;
+    position: relative;
 }
 
 @media all and (max-width: $screen-xs-max) {
-    body {
+    #app {
         padding-top: 76px;
     }
 }

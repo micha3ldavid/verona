@@ -25,6 +25,10 @@
     transition: all 0.5s;
 }
 
+.jheader-nav {
+    margin: 8px 0 0 0;
+}
+
 .jheader-nav li + li {
     margin-left: ($grid-gutter-width / 2);
 }
@@ -57,7 +61,6 @@
 }
 
 .jheader-mobilenav {
-    background: #333;
     margin: 0;
     height: 300px;
     overflow: hidden;
@@ -70,21 +73,44 @@
     &[aria-hidden="true"] {
         height: 0;
     }
+}
 
-    > li {
-        border-top: 1px solid #000;
-        list-style: none;
-        text-align: center;
-    }
+.jheader-mobilenav > li {
+    list-style: none;
+    text-align: center;
+}
 
-    > li:first-child {
-        border-top-width: 0;
-    }
+.jheader-mobilenav > li:nth-child(1) {
+    background-color: #222;
+}
 
-    > li a {
-        display: block;
-        padding: 8px 0;
-    }
+.jheader-mobilenav > li:nth-child(2) {
+    background-color: #333;
+}
+
+.jheader-mobilenav > li:nth-child(3) {
+    background-color: #444;
+}
+
+.jheader-mobilenav > li:nth-child(4) {
+    background-color: #555;
+}
+
+.jheader-mobilenav > li:nth-child(5) {
+    background-color: #666;
+}
+
+.jheader-mobilenav > li:nth-child(6) {
+    background-color: #777;
+}
+
+.jheader-mobilenav > li:nth-child(7) {
+    background-color: #888;
+}
+
+.jheader-mobilenav > li > a {
+    display: block;
+    padding: 8px 0;
 }
 
 @media all and (min-width: $screen-xs-max) {

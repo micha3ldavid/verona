@@ -1,9 +1,11 @@
 
 footer.jfooter
+
     ul.jfooter-menu
         each link in navigations.footer
             li
                 a(href=link.path) #{link.label}
+
     ul.jfooter-menu
         each social in navigations.social
             li

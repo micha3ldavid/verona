@@ -33,19 +33,19 @@
             "name": "instagram",
             "label": "Instagram",
             "path": "http://instagram.com/julianocreative",
-            "classname": "fa fa-instagram"
+            "classname": "fa fa-instagram fa-lg"
         },
         {
             "name": "twitter",
             "label": "Twitter",
             "path": "http://twitter.com/julianocreative",
-            "classname": "fa fa-twitter"
+            "classname": "fa fa-twitter fa-lg"
         },
         {
             "name": "facebook",
             "label": "Facebook",
             "path": "http://facebook.com/julianocreative",
-            "classname": "fa fa-facebook-official"
+            "classname": "fa fa-facebook-official fa-lg"
         }
     ],
 

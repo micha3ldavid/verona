@@ -3,11 +3,18 @@
     background: $brand-secondary;
     padding: $grid-gutter-width / 2;
     width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
 }
 
 .jfooter-menu {
     @extend .list-inline;
     text-align: center;
+}
+
+.jfooter-menu li {
+    padding: 0 $grid-gutter-width / 2;
 }
 
 .jfooter-menu > li > a {
