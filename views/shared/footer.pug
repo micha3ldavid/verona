@@ -6,25 +6,31 @@ footer#footer
                 section.promo
                     h3.promo-title
                         | Collaborate
-                    p
+                    p.promo-body
                         | Jargon and other bullshit placeholder text for now and all that crap.
+                    div.promo-body
+                        a.btn.btn-primary(href="/contact")
+                            | Let's Get Creating
             div.col-sm-4
                 section.promo
                     h3.promo-title
                         | Commission
-                    p
+                    p.promo-body
                         | Request any custom piece you like. Shoes, shirts, hoodies, jackets.
-
+                    div.promo-body
+                        a.btn.btn-primary(href="/customs")
+                            | Get Started Today
             div.col-sm-4
                 section.promo
                     h3.promo-title
-                        | Connect With Us
-                    ul.list-inline
-                        each social in navigations.social
-                            li
-                                a.social(href=social.path, target="_blank")
-                                    span(role="presentation", class=social.classname)
-                                    span.sr-only #{social.label}
+                        | Stay Connected With Me
+                    div.promo-body
+                        ul.list-inline
+                            each social in navigations.social
+                                li
+                                    a.social(href=social.path, target="_blank")
+                                        span(role="presentation", class=social.classname)
+                                        span.sr-only #{social.label}
     div.legal.clearfix
         div.pull-left
             ul.footer-nav

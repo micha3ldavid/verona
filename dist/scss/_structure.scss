@@ -8,13 +8,13 @@ body {
 
 #app {
     min-height: 100vh;
-    padding-top: 95px;
+    padding-top: 75px;
     padding-bottom: 164px;
     position: relative;
 }
 
 @media all and (max-width: $screen-xs-max) {
     #app {
-        padding-top: 76px;
+        padding-bottom: 289px;
     }
 }

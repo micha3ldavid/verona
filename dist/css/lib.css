@@ -8153,13 +8153,13 @@ body {
 
 #app {
   min-height: 100vh;
-  padding-top: 95px;
+  padding-top: 75px;
   padding-bottom: 164px;
   position: relative; }
 
 @media all and (max-width: 767px) {
   #app {
-    padding-top: 76px; } }
+    padding-bottom: 289px; } }
 
 #header {
   background: black;
@@ -8196,14 +8196,10 @@ body {
   padding: 28px 0; }
 
 #nav-main li a,
-#nav-mobile li a,
 #btn-nav-mobile {
   color: #fff;
   text-transform: uppercase; }
   #nav-main li a:hover, #nav-main li a:active, #nav-main li a:focus,
-  #nav-mobile li a:hover,
-  #nav-mobile li a:active,
-  #nav-mobile li a:focus,
   #btn-nav-mobile:hover,
   #btn-nav-mobile:active,
   #btn-nav-mobile:focus {
@@ -8220,30 +8216,6 @@ body {
   right: -200px;
   opacity: 0;
   transition: all 0.5s; }
-
-#nav-mobile {
-  margin: 0;
-  height: 300px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  top: 100%;
-  transition: height 0.5s;
-  width: 100%; }
-  #nav-mobile[aria-hidden="true"] {
-    height: 0; }
-
-#nav-mobile > li {
-  background: #111;
-  list-style: none;
-  text-align: center; }
-  #nav-mobile > li > a {
-    display: block;
-    padding: 8px 0; }
-
-@media all and (min-width: 767px) {
-  #nav-mobile {
-    height: 0; } }
 
 @media all and (max-width: 767px) {
   #nav-main {
@@ -8278,6 +8250,45 @@ body {
 
 #footer .footer-nav {
   margin: 0; }
+
+@media all and (max-width: 767px) {
+  #footer {
+    height: 289px; }
+  #footer .promo-title,
+  #footer .promo-body {
+    text-align: center; } }
+
+#nav-mobile {
+  background: #111;
+  bottom: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  transition: height 0.5s;
+  width: 100%;
+  z-index: 2; }
+  #nav-mobile[aria-hidden="true"] {
+    display: none; }
+
+#nav-mobile > li {
+  background: #111;
+  list-style: none;
+  text-align: center; }
+  #nav-mobile > li > a {
+    display: block;
+    padding: 8px 0; }
+
+#nav-mobile > li > a {
+  color: #fff;
+  text-transform: uppercase; }
+  #nav-mobile > li > a:hover, #nav-mobile > li > a:active, #nav-mobile > li > a:focus {
+    color: crimson; }
+
+@media all and (min-width: 767px) {
+  #nav-mobile {
+    display: none; } }
 
 html body a,
 html body button {

@@ -28,3 +28,14 @@
     @extend .list-inline;
     margin: 0;
 }
+
+@media all and (max-width: $screen-xs-max) {
+    #footer {
+        height: 289px;
+    }
+
+    #footer .promo-title,
+    #footer .promo-body {
+        text-align: center;
+    }
+}

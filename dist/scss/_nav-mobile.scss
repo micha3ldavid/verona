@@ -1,0 +1,45 @@
+
+#nav-mobile {
+    background: #111;
+    bottom: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    transition: height 0.5s;
+    width: 100%;
+    z-index: 2;
+
+    &[aria-hidden="true"] {
+        display: none;
+    }
+}
+
+#nav-mobile > li {
+    background: #111;
+    list-style: none;
+    text-align: center;
+
+    > a {
+        display: block;
+        padding: 8px 0;
+    }
+}
+
+#nav-mobile > li > a {
+    color: #fff;
+    text-transform: uppercase;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $brand-primary;
+    }
+}
+
+@media all and (min-width: $screen-xs-max) {
+    #nav-mobile {
+        display: none;
+    }
+}

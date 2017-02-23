@@ -8,14 +8,6 @@ header#header
         span.sr-only
             | Toggle Main Menu
 
-    ul#nav-mobile(aria-hidden="true")
-        each page in navigations.main
-            li
-                a(href=page.path) #{page.label}
-        each social in navigations.social
-            li
-                a(href=social.path, target="_blank") #{social.label}
-
     ul#nav-main
         each page in navigations.main
             li
@@ -26,3 +18,12 @@ header#header
                 a.social(href=social.path, target="_blank")
                     span(role="presentation", class=social.classname)
                     span.sr-only #{social.label}
+
+div#nav-mobile(aria-hidden="true")
+    ul.list-unstyled
+        each page in navigations.main
+            li
+                a(href=page.path) #{page.label}
+        each social in navigations.social
+            li
+                a(href=social.path, target="_blank") #{social.label}
