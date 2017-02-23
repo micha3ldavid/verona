@@ -1350,13 +1350,13 @@ ol {
   padding-left: 0;
   list-style: none; }
 
-.list-inline, .jheader-nav,
-.jheader-social, .jfooter-menu {
+.list-inline, #nav-main,
+#nav-social, #footer .footer-nav {
   padding-left: 0;
   list-style: none;
   margin-left: -5px; }
-  .list-inline > li, .jheader-nav > li,
-  .jheader-social > li, .jfooter-menu > li {
+  .list-inline > li, #nav-main > li,
+  #nav-social > li, #footer .footer-nav > li {
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px; }
@@ -8154,14 +8154,14 @@ body {
 #app {
   min-height: 100vh;
   padding-top: 95px;
-  padding-bottom: 200px;
+  padding-bottom: 164px;
   position: relative; }
 
 @media all and (max-width: 767px) {
   #app {
     padding-top: 76px; } }
 
-.jheader {
+#header {
   background: black;
   position: fixed;
   height: 75px;
@@ -8170,62 +8170,58 @@ body {
   top: 0;
   z-index: 1; }
 
-.jheader-title {
+#header .title {
   float: left;
   margin: 15px 30px;
   text-align: center; }
 
-.jheader-logo {
+#header .logo {
   width: 150px; }
 
-.jheader-nav,
-.jheader-social {
+#nav-main,
+#nav-social {
   text-align: center;
   transition: all 0.5s; }
 
-.jheader-nav {
+#nav-main {
   float: left;
   margin: 0; }
 
-.jheader-nav li + li {
+#nav-main li + li {
   margin-left: 15px; }
 
-.jheader-nav li a {
+#nav-main li a {
   display: block;
   font-weight: 600;
   padding: 28px 0; }
 
-.jheader-nav li a,
-.jheader-social li a,
-.jheader-mobilenav li a,
-.jheader-mobile {
+#nav-main li a,
+#nav-mobile li a,
+#btn-nav-mobile {
   color: #fff;
   text-transform: uppercase; }
-  .jheader-nav li a:hover, .jheader-nav li a:active, .jheader-nav li a:focus,
-  .jheader-social li a:hover,
-  .jheader-social li a:active,
-  .jheader-social li a:focus,
-  .jheader-mobilenav li a:hover,
-  .jheader-mobilenav li a:active,
-  .jheader-mobilenav li a:focus,
-  .jheader-mobile:hover,
-  .jheader-mobile:active,
-  .jheader-mobile:focus {
+  #nav-main li a:hover, #nav-main li a:active, #nav-main li a:focus,
+  #nav-mobile li a:hover,
+  #nav-mobile li a:active,
+  #nav-mobile li a:focus,
+  #btn-nav-mobile:hover,
+  #btn-nav-mobile:active,
+  #btn-nav-mobile:focus {
     color: crimson; }
 
-.jheader-social {
+#nav-social {
   position: absolute;
   right: 30px;
-  top: 28px; }
+  top: 22px; }
 
-.jheader-mobile {
+#btn-nav-mobile {
   position: absolute;
   top: 22px;
   right: -200px;
   opacity: 0;
   transition: all 0.5s; }
 
-.jheader-mobilenav {
+#nav-mobile {
   margin: 0;
   height: 300px;
   overflow: hidden;
@@ -8234,77 +8230,54 @@ body {
   top: 100%;
   transition: height 0.5s;
   width: 100%; }
-  .jheader-mobilenav[aria-hidden="true"] {
+  #nav-mobile[aria-hidden="true"] {
     height: 0; }
 
-.jheader-mobilenav > li {
+#nav-mobile > li {
+  background: #111;
   list-style: none;
   text-align: center; }
-
-.jheader-mobilenav > li:nth-child(1) {
-  background-color: #222; }
-
-.jheader-mobilenav > li:nth-child(2) {
-  background-color: #333; }
-
-.jheader-mobilenav > li:nth-child(3) {
-  background-color: #444; }
-
-.jheader-mobilenav > li:nth-child(4) {
-  background-color: #555; }
-
-.jheader-mobilenav > li:nth-child(5) {
-  background-color: #666; }
-
-.jheader-mobilenav > li:nth-child(6) {
-  background-color: #777; }
-
-.jheader-mobilenav > li:nth-child(7) {
-  background-color: #888; }
-
-.jheader-mobilenav > li > a {
-  display: block;
-  padding: 8px 0; }
+  #nav-mobile > li > a {
+    display: block;
+    padding: 8px 0; }
 
 @media all and (min-width: 767px) {
-  .jheader-mobilenav {
+  #nav-mobile {
     height: 0; } }
 
 @media all and (max-width: 767px) {
-  .jheader-nav {
+  #nav-main {
     display: none; }
-  .jheader-social {
+  #nav-social {
     right: -200px;
     opacity: 0; }
-  .jheader-mobile {
+  #btn-nav-mobile {
     right: 30px;
     opacity: 1; } }
 
-.jfooter {
-  background: #222;
+#footer {
+  background: #111;
   color: white;
-  padding: 15px;
   width: 100%;
-  height: 200px;
+  height: 164px;
   position: absolute;
   bottom: 0; }
 
-.jfooter-menu {
-  text-align: center; }
+#footer .promo-list {
+  padding: 15px 30px; }
 
-.jfooter-menu li {
-  padding: 0 15px; }
+#footer .promo .promo-title {
+  font-size: 16px;
+  text-transform: uppercase; }
 
-.jfooter-menu > li > a {
-  color: #fff; }
-  .jfooter-menu > li > a:hover, .jfooter-menu > li > a:active, .jfooter-menu > li > a:focus {
-    color: crimson; }
-
-.jfooter .legal {
+#footer .legal {
+  background: black;
   color: #fff;
-  font-size: 80%;
-  margin: 0;
+  padding: 10px 30px;
   text-align: center; }
+
+#footer .footer-nav {
+  margin: 0; }
 
 html body a,
 html body button {
@@ -8354,3 +8327,43 @@ html body button {
   display: inline-block;
   font-size: 12px;
   margin: 0 0 5px; }
+
+a.social {
+  color: white; }
+  a.social:hover, a.social:focus, a.social:active {
+    color: #fff; }
+
+a.social .fa-facebook,
+a.social .fa-twitter,
+a.social .fa-instagram {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  transition: background-color 0.5s;
+  position: relative; }
+  a.social .fa-facebook:before,
+  a.social .fa-twitter:before,
+  a.social .fa-instagram:before {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 100%; }
+
+a.social .fa-facebook {
+  background-color: #3B5998; }
+
+a.social .fa-twitter {
+  background-color: #55ACEE; }
+
+a.social .fa-instagram {
+  background-color: #E12F67; }
+
+a.social:hover .fa-facebook, a.social:focus .fa-facebook, a.social:active .fa-facebook {
+  background: #1e2e4f; }
+
+a.social:hover .fa-twitter, a.social:focus .fa-twitter, a.social:active .fa-twitter {
+  background: #147bc9; }
+
+a.social:hover .fa-instagram, a.social:focus .fa-instagram, a.social:active .fa-instagram {
+  background: #95153d; }

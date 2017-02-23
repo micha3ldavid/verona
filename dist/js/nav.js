@@ -1,8 +1,8 @@
 
 window.addEventListener('load', function () {
 
-    var btn = Mk.$('#btn-mobilenav'),
-        menu = Mk.$('#menu-mobilenav'),
+    var btn = Mk.$('#btn-nav-mobile'),
+        menu = Mk.$('#nav-mobile'),
         hidden;
 
     btn.on('click', function (e) {

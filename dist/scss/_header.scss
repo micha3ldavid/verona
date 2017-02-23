@@ -1,5 +1,5 @@
 
-.jheader {
+#header {
     background: $brand-secondary;
     position: fixed;
     height: 75px;
@@ -9,42 +9,41 @@
     z-index: 1;
 }
 
-.jheader-title {
+#header .title {
     float: left;
     margin: ($grid-gutter-width / 2) $grid-gutter-width;
     text-align: center;
 }
 
-.jheader-logo {
+#header .logo {
     width: 150px;
 }
 
-.jheader-nav,
-.jheader-social {
+#nav-main,
+#nav-social {
     @extend .list-inline;
     text-align: center;
     transition: all 0.5s;
 }
 
-.jheader-nav {
+#nav-main {
     float: left;
     margin: 0;
 }
 
-.jheader-nav li + li {
+#nav-main li + li {
     margin-left: ($grid-gutter-width / 2);
 }
 
-.jheader-nav li a {
+#nav-main li a {
     display: block;
     font-weight: 600;
     padding: 28px 0;
 }
 
-.jheader-nav li a,
-.jheader-social li a,
-.jheader-mobilenav li a,
-.jheader-mobile {
+#nav-main li a,
+#nav-mobile li a,
+#btn-nav-mobile {
     color: #fff;
     text-transform: uppercase;
 
@@ -55,13 +54,13 @@
     }
 }
 
-.jheader-social {
+#nav-social {
     position: absolute;
     right: $grid-gutter-width;
-    top: 28px;
+    top: 22px;
 }
 
-.jheader-mobile {
+#btn-nav-mobile {
     position: absolute;
     top: 22px;
     right: -200px;
@@ -69,7 +68,7 @@
     transition: all 0.5s;
 }
 
-.jheader-mobilenav {
+#nav-mobile {
     margin: 0;
     height: 300px;
     overflow: hidden;
@@ -84,62 +83,35 @@
     }
 }
 
-.jheader-mobilenav > li {
+#nav-mobile > li {
+    background: #111;
     list-style: none;
     text-align: center;
-}
 
-.jheader-mobilenav > li:nth-child(1) {
-    background-color: #222;
-}
-
-.jheader-mobilenav > li:nth-child(2) {
-    background-color: #333;
-}
-
-.jheader-mobilenav > li:nth-child(3) {
-    background-color: #444;
-}
-
-.jheader-mobilenav > li:nth-child(4) {
-    background-color: #555;
-}
-
-.jheader-mobilenav > li:nth-child(5) {
-    background-color: #666;
-}
-
-.jheader-mobilenav > li:nth-child(6) {
-    background-color: #777;
-}
-
-.jheader-mobilenav > li:nth-child(7) {
-    background-color: #888;
-}
-
-.jheader-mobilenav > li > a {
-    display: block;
-    padding: 8px 0;
+    > a {
+        display: block;
+        padding: 8px 0;
+    }
 }
 
 @media all and (min-width: $screen-xs-max) {
-    .jheader-mobilenav {
+    #nav-mobile {
         height: 0;
     }
 }
 
 @media all and (max-width: $screen-xs-max) {
 
-    .jheader-nav {
+    #nav-main {
         display: none;
     }
 
-    .jheader-social {
+    #nav-social {
         right: -200px;
         opacity: 0;
     }
 
-    .jheader-mobile {
+    #btn-nav-mobile {
         right: $grid-gutter-width;
         opacity: 1;
     }

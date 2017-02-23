@@ -1,40 +1,36 @@
 
-footer.jfooter
-    div.row
-        div.col-sm-4
-            section
-                h3
-                    | COLLABORATE
-                p
-                    | Jargon and other bullshit placeholder text for now and all that crap.
-                h3
-                    | COMMISSION
-                p
-                    | Request any custom piece you like. Shoes, shirts, hoodies, jackets.
+footer#footer
+    div.promo-list
+        div.row
+            div.col-sm-4
+                section.promo
+                    h3.promo-title
+                        | Collaborate
+                    p
+                        | Jargon and other bullshit placeholder text for now and all that crap.
+            div.col-sm-4
+                section.promo
+                    h3.promo-title
+                        | Commission
+                    p
+                        | Request any custom piece you like. Shoes, shirts, hoodies, jackets.
 
-        div.col-sm-4
-            section
-                h3
-                    | CONNECT WITH US
-                ul
-                    each social in navigations.social
-                        li
-                            a(href=social.path, target="_blank")
-                                span(role="presentation", class=social.classname)
-                                span.sr-only #{social.label}
-    //-
+            div.col-sm-4
+                section.promo
+                    h3.promo-title
+                        | Connect With Us
+                    ul.list-inline
+                        each social in navigations.social
+                            li
+                                a.social(href=social.path, target="_blank")
+                                    span(role="presentation", class=social.classname)
+                                    span.sr-only #{social.label}
+    div.legal.clearfix
+        div.pull-left
+            ul.footer-nav
+                each item in navigations.footer
+                    li
+                        a(href=item.path) #{item.label}
 
-        ul.jfooter-menu
-            each link in navigations.footer
-                li
-                    a(href=link.path) #{link.label}
-
-        ul.jfooter-menu
-            each social in navigations.social
-                li
-                    a(href=social.path, target="_blank")
-                        span(role="presentation", class=social.classname)
-                        span.sr-only #{social.label}
-
-        p.legal
-            | &copy; Copyright Juliano Creative 2017
+        div.pull-right
+            | &copy; Copyright 2017 Juliano Creative

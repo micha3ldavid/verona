@@ -45,7 +45,7 @@
             "name": "facebook",
             "label": "Facebook",
             "path": "http://facebook.com/julianocreative",
-            "classname": "fa fa-facebook-official fa-lg"
+            "classname": "fa fa-facebook fa-lg"
         }
     ],
 
@@ -55,12 +55,6 @@
             "name": "contact",
             "label": "Contact",
             "path": "/contact",
-            "classname": ""
-        },
-        {
-            "name": "collaborate",
-            "label": "Collaborate",
-            "path": "/collaborate",
             "classname": ""
         },
         {

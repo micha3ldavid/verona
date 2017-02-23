@@ -1,36 +1,30 @@
 
-.jfooter {
-    background: #222;
+#footer {
+    background: #111;
     color: white;
-    padding: $grid-gutter-width / 2;
     width: 100%;
-    height: 200px;
+    height: 164px;
     position: absolute;
     bottom: 0;
 }
 
-.jfooter-menu {
+#footer .promo-list {
+    padding: $grid-gutter-width / 2 $grid-gutter-width;
+}
+
+#footer .promo .promo-title {
+    font-size: $font-size-h5;
+    text-transform: uppercase;
+}
+
+#footer .legal {
+    background: $brand-secondary;
+    color: #fff;
+    padding: 10px $grid-gutter-width;
+    text-align: center;
+}
+
+#footer .footer-nav {
     @extend .list-inline;
-    text-align: center;
-}
-
-.jfooter-menu li {
-    padding: 0 $grid-gutter-width / 2;
-}
-
-.jfooter-menu > li > a {
-    color: #fff;
-
-    &:hover,
-    &:active,
-    &:focus {
-        color: $brand-primary;
-    }
-}
-
-.jfooter .legal {
-    color: #fff;
-    font-size: 80%;
     margin: 0;
-    text-align: center;
 }
