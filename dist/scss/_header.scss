@@ -2,7 +2,7 @@
 .jheader {
     background: $brand-secondary;
     position: fixed;
-    height: 95px;
+    height: 75px;
     width: 100%;
     transition: all 0.5s;
     top: 0;
@@ -10,7 +10,8 @@
 }
 
 .jheader-title {
-    margin: ($grid-gutter-width / 2) 0 5px 0;
+    float: left;
+    margin: ($grid-gutter-width / 2) $grid-gutter-width;
     text-align: center;
 }
 
@@ -26,11 +27,18 @@
 }
 
 .jheader-nav {
-    margin: 8px 0 0 0;
+    float: left;
+    margin: 0;
 }
 
 .jheader-nav li + li {
     margin-left: ($grid-gutter-width / 2);
+}
+
+.jheader-nav li a {
+    display: block;
+    font-weight: 600;
+    padding: 28px 0;
 }
 
 .jheader-nav li a,
@@ -38,6 +46,7 @@
 .jheader-mobilenav li a,
 .jheader-mobile {
     color: #fff;
+    text-transform: uppercase;
 
     &:hover,
     &:active,
@@ -48,14 +57,14 @@
 
 .jheader-social {
     position: absolute;
-    right: 15px;
+    right: $grid-gutter-width;
     top: 28px;
 }
 
 .jheader-mobile {
     position: absolute;
     top: 22px;
-    left: -200px;
+    right: -200px;
     opacity: 0;
     transition: all 0.5s;
 }
@@ -121,10 +130,6 @@
 
 @media all and (max-width: $screen-xs-max) {
 
-    .jheader {
-        height: 76px;
-    }
-
     .jheader-nav {
         display: none;
     }
@@ -135,7 +140,7 @@
     }
 
     .jheader-mobile {
-        left: 15px;
+        right: $grid-gutter-width;
         opacity: 1;
     }
 }

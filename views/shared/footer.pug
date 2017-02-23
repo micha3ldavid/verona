@@ -1,17 +1,40 @@
 
 footer.jfooter
+    div.row
+        div.col-sm-4
+            section
+                h3
+                    | COLLABORATE
+                p
+                    | Jargon and other bullshit placeholder text for now and all that crap.
+                h3
+                    | COMMISSION
+                p
+                    | Request any custom piece you like. Shoes, shirts, hoodies, jackets.
 
-    ul.jfooter-menu
-        each link in navigations.footer
-            li
-                a(href=link.path) #{link.label}
+        div.col-sm-4
+            section
+                h3
+                    | CONNECT WITH US
+                ul
+                    each social in navigations.social
+                        li
+                            a(href=social.path, target="_blank")
+                                span(role="presentation", class=social.classname)
+                                span.sr-only #{social.label}
+    //-
 
-    ul.jfooter-menu
-        each social in navigations.social
-            li
-                a(href=social.path, target="_blank")
-                    span(role="presentation", class=social.classname)
-                    span.sr-only #{social.label}
+        ul.jfooter-menu
+            each link in navigations.footer
+                li
+                    a(href=link.path) #{link.label}
 
-    p.legal
-        | &copy; Copyright Juliano Creative 2017
+        ul.jfooter-menu
+            each social in navigations.social
+                li
+                    a(href=social.path, target="_blank")
+                        span(role="presentation", class=social.classname)
+                        span.sr-only #{social.label}
+
+        p.legal
+            | &copy; Copyright Juliano Creative 2017

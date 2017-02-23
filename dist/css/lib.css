@@ -1055,7 +1055,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -5186,7 +5186,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5299,7 +5299,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8154,6 +8154,7 @@ body {
 #app {
   min-height: 100vh;
   padding-top: 95px;
+  padding-bottom: 200px;
   position: relative; }
 
 @media all and (max-width: 767px) {
@@ -8163,14 +8164,15 @@ body {
 .jheader {
   background: black;
   position: fixed;
-  height: 95px;
+  height: 75px;
   width: 100%;
   transition: all 0.5s;
   top: 0;
   z-index: 1; }
 
 .jheader-title {
-  margin: 15px 0 5px 0;
+  float: left;
+  margin: 15px 30px;
   text-align: center; }
 
 .jheader-logo {
@@ -8182,16 +8184,23 @@ body {
   transition: all 0.5s; }
 
 .jheader-nav {
-  margin: 8px 0 0 0; }
+  float: left;
+  margin: 0; }
 
 .jheader-nav li + li {
   margin-left: 15px; }
+
+.jheader-nav li a {
+  display: block;
+  font-weight: 600;
+  padding: 28px 0; }
 
 .jheader-nav li a,
 .jheader-social li a,
 .jheader-mobilenav li a,
 .jheader-mobile {
-  color: #fff; }
+  color: #fff;
+  text-transform: uppercase; }
   .jheader-nav li a:hover, .jheader-nav li a:active, .jheader-nav li a:focus,
   .jheader-social li a:hover,
   .jheader-social li a:active,
@@ -8206,13 +8215,13 @@ body {
 
 .jheader-social {
   position: absolute;
-  right: 15px;
+  right: 30px;
   top: 28px; }
 
 .jheader-mobile {
   position: absolute;
   top: 22px;
-  left: -200px;
+  right: -200px;
   opacity: 0;
   transition: all 0.5s; }
 
@@ -8262,22 +8271,21 @@ body {
     height: 0; } }
 
 @media all and (max-width: 767px) {
-  .jheader {
-    height: 76px; }
   .jheader-nav {
     display: none; }
   .jheader-social {
     right: -200px;
     opacity: 0; }
   .jheader-mobile {
-    left: 15px;
+    right: 30px;
     opacity: 1; } }
 
 .jfooter {
-  background: black;
+  background: #222;
+  color: white;
   padding: 15px;
   width: 100%;
-  height: 100px;
+  height: 200px;
   position: absolute;
   bottom: 0; }
 
