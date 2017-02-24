@@ -1,0 +1,12 @@
+
+.footnote {
+    background: $brand-secondary;
+    color: #fff;
+    padding: 10px $grid-gutter-width;
+    text-align: center;
+}
+
+.footnote-nav {
+    @extend .list-inline;
+    margin: 0;
+}

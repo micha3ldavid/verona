@@ -1,0 +1,22 @@
+
+header#header
+    h1.title
+        a(href="/")
+            img.logo(src="/dist/img/logo.svg", alt="JULIANO LIMITED")
+
+    ul#nav-main
+        each page in navigations.main
+            li
+                a(href=page.path) #{page.label}
+
+    ul#nav-social
+        each social in navigations.social
+            li
+                a.social(href=social.path, target="_blank")
+                    span(role="presentation", class=social.classname)
+                    span.sr-only #{social.label}
+
+    button#btn-nav-mobile.btn-link
+        span.fa.fa-navicon.fa-2x(role="presentation")
+        span.sr-only
+            | Toggle Main Menu

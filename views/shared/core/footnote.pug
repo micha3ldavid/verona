@@ -1,0 +1,10 @@
+
+div.footnote.clearfix
+    div.pull-left
+        ul.footnote-nav
+            each item in navigations.footer
+                li
+                    a(href=item.path) #{item.label}
+
+    div.pull-right
+        | &copy; Copyright 2017 Juliano Creative

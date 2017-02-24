@@ -36,14 +36,10 @@
 }
 
 #nav-main li a {
+    color: #fff;
     display: block;
     font-weight: 600;
     padding: 28px 0;
-}
-
-#nav-main li a,
-#btn-nav-mobile {
-    color: #fff;
     text-transform: uppercase;
 
     &:hover,
@@ -60,14 +56,20 @@
 }
 
 #btn-nav-mobile {
+    color: #fff;
     position: absolute;
-    top: 22px;
+    top: 20px;
     right: -200px;
     opacity: 0;
+    outline: 0;
     transition: all 0.5s;
 }
 
 @media all and (max-width: $screen-xs-max) {
+
+    #header .title {
+        float: none;
+    }
 
     #nav-main {
         display: none;

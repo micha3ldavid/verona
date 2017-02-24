@@ -3,15 +3,20 @@ html
     head
         meta(name="viewport", content="width=device-width, initial-scale=1")
         link(rel="stylesheet", type="text/css", href="/dist/css/lib.css")
-        link(rel="stylesheet", type="text/css", href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600")
+        //- link(rel="stylesheet", type="text/css", href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600")
         title
             | JULIANO STREETWEAR - #{title}
     body
         div#app
-            include header
+            include ../core/header
+            include ../core/nav-mobile
+
             div#main(role="main")
                 block content
-            include footer
+
+            include ../core/footer
+
         script(type="text/javascript", src="/node_modules/mk-ui/dist/js/core.min.js")
         script(type="text/javascript", src="/dist/js/nav.js")
+
         block scripts

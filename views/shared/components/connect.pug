@@ -1,0 +1,11 @@
+
+section.promo
+    h3.promo-title
+        | Stay Connect With Me
+    div.promo-body
+        ul.list-inline
+            each social in navigations.social
+                li
+                    a.social(href=social.path, target="_blank")
+                        span(role="presentation", class=social.classname)
+                        span.sr-only #{social.label}
