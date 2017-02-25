@@ -1,16 +1,18 @@
 
 var fs = require('fs'),
-	path = require('path');
-
-var keys = {
-    navigations: "navigations.json",
-	details: "details.json"
-};
+	path = require('path'),
+	keys = {
+    	navigations: "navigations",
+		details: "details"
+	};
 
 function error (err, file) {
     return {
         error: err,
-        message: 'Unable to parse file ' + file
+		file: file,
+		success: false,
+		unsuccessful: true,
+		data: {}
     };
 };
 
@@ -31,6 +33,8 @@ module.exports = {
 
         if (file) {
 
+			file += '.json';
+
             fs.readFile(path.join(__dirname, file), {encoding: 'utf-8'}, function (err, data) {
 
 				if (err) {
@@ -38,11 +42,18 @@ module.exports = {
 					return;
 				}
 
-				cb(JSON.parse(data));
+				cb({
+					success: true,
+					unsuccessful: false,
+					error: undefined,
+					file: file,
+					data: JSON.parse(data)
+				});
 		    });
+
+			return;
         }
-		else {
-			cb(me.error('No key found for ' + key, key));
-		}
+
+		cb(me.error(new Error('No such key exists'), key));
     }
 };
