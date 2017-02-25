@@ -1,49 +1,44 @@
 
-var store = require('../store/store');
+var store = require('../store');
 
 module.exports = function (express, app) {
 
-    app.get('/details/:cat/:key', function (req, res) {
+    app.get('/details/:category/:key', function (req, res) {
 
-        var p = req.params,
+        var category = req.params.category || null,
+            key = req.params.key || null,
+            data,
+            items;
+
+        store.pull('views,navigations' + (category ? ',' + category : ''), function (result) {
+
             data = {
-                view: '404',
-                page: '/details',
-                title: '',
-                item: null
+                page: result.views.details,
+                navigations: result.navigations
             };
 
-        store.pull('navigations', function (navs) {
-
-            if (navs.error) {
-                data.view = '500';
+            if (result.error) {
+                data.page = result.views["500"];
             }
 
-            data.navigations = navs.data;
+            items = (result[category] || {}).items || [];
 
-            store.pull('details', function (details) {
+            items.forEach(function (item, i) {
 
-                if (details.error) {
-                    data.view = '500';
+                if (item.key === key) {
+                    data.details = item;
+                    return false;
                 }
-                else {
-
-                    (details.data[p.cat] || []).forEach(function (entry, i) {
-                        if (entry.key === p.key) {
-                            data.item = entry;
-                            data.index = i;
-                            return false;
-                        }
-                    });
-                }
-
-                if (data.item) {
-                    data.title = data.item.name;
-                    data.view  = 'details';
-                }
-
-                res.render(data.view, data);
             });
+
+            if (data.details) {
+                data.page.title = data.details.name;
+            }
+            else {
+                data.page = result.views["404"];
+            }
+
+            res.render(data.page.view, data);
         });
     });
 };

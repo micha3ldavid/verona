@@ -1,5 +1,5 @@
 
-var store = require('../store/store');
+var store = require('../store');
 
 module.exports = function (express, app) {
 

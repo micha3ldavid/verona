@@ -1,8 +1,11 @@
 {
-    "customs": [
+    "name": "Customs",
+    "category": "customs",
+    "items": [
         {
+            "id": "22c72b36-d437-4976-94fb-0d795257cba1",
             "key": "cry-baby-die-baby",
-            "name": "Cry baby, die baby",
+            "name": "Cry Baby, Die Baby",
             "desc": "Custom biker jacket inspired by 1950s pop art, comics, and crying women.",
             "path": "/details/customs/cry-baby-die-baby",
             "price": 300,
@@ -11,6 +14,7 @@
             "series": []
         },
         {
+            "id": "0f317534-4033-400b-b1b5-394f7d47afbe",
             "key": "neon-leopard-party",
             "name": "Neon Leopard Party",
             "desc": "Custom leather/knit mix jacket inspired by the neon 1980s and the Synthwave groove.",
@@ -21,6 +25,7 @@
             "series": []
         },
         {
+            "id": "2776e1c9-af15-47e0-89f3-f25f8df5e73b",
             "key": "lily-of-the-valley",
             "name": "Lily of the Valley",
             "desc": "Custom moto jacket inspired by mermaids, lilies, and a little sexy.",

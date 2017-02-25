@@ -1,34 +1,19 @@
 
-var store = require('../store/store');
+var store = require('../store');
 
 module.exports = function (express, app) {
 
     app.get('/', function (req, res) {
 
-        var data = {
-            page: '/',
-            title: 'Home',
-            view: 'index'
-        };
+        store.pull('views,navigations,customs', function (result) {
 
-        store.pull('navigations', function (navs) {
+            var data = {
+                page: result.views.home,
+                navigations: result.navigations,
+                latest: result.customs.items
+            };
 
-            if (navs.error) {
-                data.view = '500';
-            }
-
-            data.navigations = navs.data;
-
-            store.pull('details', function (details) {
-
-                if (details.error) {
-                    data.view = '500';
-                }
-
-                data.details = details.data;
-
-                res.render(data.view, data);
-            });
+            res.render(data.page.view, data);
         });
     });
 };

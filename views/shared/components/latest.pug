@@ -1,8 +1,8 @@
 
 include ../../mixins/card.pug
 
-- var length = details.customs.length - 1;
-- var limit = length - 3;
+- var length = latest.length - 1;
+- var limit  = length - 3;
 
 section
     h2.h3
@@ -10,5 +10,5 @@ section
     ul.list-unstyled.row
         while length > limit
             li.col-sm-4
-                +card(details.customs[length])
+                +card(latest[length])
             - length--;

@@ -20,6 +20,7 @@
     "bootstrap-sass": "^3.3.7",
     "express": "^4.14.1",
     "font-awesome": "^4.7.0",
+    "marked": "^0.3.6",
     "mk-ui": "^0.0.37",
     "pug": "^2.0.0-beta11"
   },

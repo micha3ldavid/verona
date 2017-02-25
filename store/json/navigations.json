@@ -8,18 +8,6 @@
             "classname": ""
         },
         {
-            "name": "men",
-            "label": "Men",
-            "path": "/men",
-            "classname": ""
-        },
-        {
-            "name": "women",
-            "label": "Women",
-            "path": "/women",
-            "classname": ""
-        },
-        {
             "name": "customs",
             "label": "Customs",
             "path": "/customs",
