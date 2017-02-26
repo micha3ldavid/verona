@@ -1,5 +1,5 @@
 
-var store = require('../store');
+var store = require('../../store');
 
 module.exports = function (express, app) {
 
@@ -10,7 +10,7 @@ module.exports = function (express, app) {
             data,
             items;
 
-        store.pull('views,navigations' + (category ? ',' + category : ''), function (result) {
+        store.pull(['views', 'navigations', category], function (result) {
 
             data = {
                 page: result.views.details,

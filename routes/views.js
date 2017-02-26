@@ -1,7 +1,7 @@
 
-var home = require('./home'),
-    details = require('./details'),
-    errors = require('./errors');
+var home = require('./views/home'),
+    details = require('./views/details'),
+    errors = require('./views/errors');
 
 module.exports = function (express, app) {
     //

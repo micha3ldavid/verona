@@ -50,7 +50,7 @@ module.exports = {
 
 		var that = this,
 			data = {},
-			keys = key.replace(/\s/g, '').split(','),
+			keys = [].concat(key),
 			len  = keys.length,
 			cnt  = 0;
 
@@ -77,7 +77,7 @@ module.exports = {
 
     _pull: function (key, cb) {
 
-        var file = map[key] || {}, ppath;
+        var file = map[key], ppath;
 
         if (file) {
 
