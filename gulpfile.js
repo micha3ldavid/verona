@@ -2,6 +2,7 @@
 var gulp  = require('gulp'),
 	mini  = require('gulp-minify'),
 	clean = require('gulp-clean-css'),
+	concat = require('gulp-concat'),
 	sass  = require('gulp-sass');
 	paths = {
 		'style': {
@@ -20,6 +21,30 @@ gulp.task('sass', function () {
 gulp.task('clean', function() {
 
   return gulp.src('./src/css/*.css')
-    .pipe(clean({compatibility: 'ie8'}))
+    .pipe(clean({
+		compatibility: 'ie8'
+	}))
     .pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task('minify', function() {
+
+  return gulp.src('./src/js/*.js')
+    .pipe(mini({
+		ext: {
+			min: '.min.js'
+		},
+		mangle: true
+	}))
+    .pipe(gulp.dest('./dist/js'));
+});
+
+gulp.task('concat', function () {
+
+	gulp.src([
+		'./node_modules/mk-ui/dist/js/core.min.js',
+		'./dist/js/nav.min.js'
+	])
+	.pipe(concat('lib.js'))
+	.pipe(gulp.dest('./dist/js'))
 });

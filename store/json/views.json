@@ -2,7 +2,7 @@
     "fallback": {
         "id": "",
         "name": "404",
-        "view": "404",
+        "view": "pages/404",
         "path": "",
         "title": "404 No View Found"
     },
@@ -10,15 +10,31 @@
     "home": {
         "id": "329745be-23bb-4aca-a231-41d0807f55db",
         "name": "home",
-        "view": "index",
+        "view": "pages/index",
         "path": "/",
         "title": "Home"
+    },
+
+    "customs": {
+        "id": "1a475e91-8fad-4827-9b1c-b0a3c37af1de",
+        "name": "customs",
+        "view": "pages/customs",
+        "path": "/customs",
+        "title": "Customs"
+    },
+
+    "vision": {
+        "id": "f1509d5b-9d42-4315-bdba-d038574c3849",
+        "name": "vision",
+        "view": "pages/vision",
+        "path": "/vision",
+        "title": "Vision"
     },
 
     "details": {
         "id": "71b80175-d531-46bb-86c9-6054034d1d88",
         "name": "details",
-        "view": "details",
+        "view": "pages/details",
         "path": "/details/:cat/:key",
         "title": "Details"
     },
@@ -26,7 +42,7 @@
     "contact": {
         "id": "5c7a6894-9971-49e8-9046-428efd5ea604",
         "name": "contact",
-        "view": "contact",
+        "view": "pages/contact",
         "path": "/contact",
         "title": "Contact Us"
     },
@@ -34,7 +50,7 @@
     "terms": {
         "id": "21df7556-0e55-4806-afb1-f6965bb42d2e",
         "name": "terms",
-        "view": "terms",
+        "view": "pages/terms",
         "path": "/terms",
         "title": "Terms and Conditions"
     },
@@ -42,7 +58,7 @@
     "404": {
         "id": "0505aa83-3dc2-4616-af99-d8fed2c0a28b",
         "name": "404",
-        "view": "404",
+        "view": "pages/404",
         "path": "",
         "title": "Page not found"
     },
@@ -50,7 +66,7 @@
     "500": {
         "id": "9253b2ab-64cc-499d-bc5d-5d3dfbe53ad0",
         "name": "500",
-        "view": "500",
+        "view": "pages/500",
         "path": "",
         "title": "An error occured while proccessing your request."
     }

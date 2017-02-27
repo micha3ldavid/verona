@@ -35,23 +35,5 @@ module.exports = {
         json: false,
         path: "md/vision",
         ext: ".md"
-    },
-
-    "promo-collab": {
-        json: false,
-        path: "md/promo-collab",
-        ext: ".md"
-    },
-
-    "promo-order": {
-        json: false,
-        path: "md/promo-order",
-        ext: ".md"
-    },
-
-    "promo-connect": {
-        json: false,
-        path: "md/promo-connect",
-        ext: ".md"
     }
 };

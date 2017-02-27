@@ -2,8 +2,8 @@
 $fa-font-path: "../fonts";
 $fa-inverse: #000;
 
-$brand-primary: crimson;
-$brand-secondary: black;
+$brand-primary: #d91c2c;
+$brand-secondary: #090102;
 $brand-accent: white;
 
 $font-family-sans-serif: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial;
@@ -23,8 +23,12 @@ $navbar-default-color: $brand-accent;
 
 $navbar-default-link-color: $brand-accent;
 $navbar-default-link-hover-color:          $brand-primary;
-$navbar-default-link-hover-bg:             transparent !default;
-$navbar-default-link-active-color:         $brand-primary !default;
+$navbar-default-link-hover-bg:             transparent;
+$navbar-default-link-active-color:         $brand-primary;
 $navbar-default-link-active-bg:            $brand-secondary;
-$navbar-default-link-disabled-color:       #999 !default;
-$navbar-default-link-disabled-bg:          transparent !default;
+$navbar-default-link-disabled-color:       #999;
+$navbar-default-link-disabled-bg:          transparent;
+
+$btn-primary-color:             $brand-primary;
+$btn-primary-bg:                 transparent;
+$btn-primary-border:             $brand-primary;

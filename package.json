@@ -20,14 +20,15 @@
     "bootstrap-sass": "^3.3.7",
     "express": "^4.14.1",
     "font-awesome": "^4.7.0",
-    "gulp-clean-css": "^3.0.3",
-    "gulp-minify": "0.0.15",
     "marked": "^0.3.6",
     "mk-ui": "^0.0.37",
     "pug": "^2.0.0-beta11"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-minify": "0.0.15"
   }
 }

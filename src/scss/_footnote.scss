@@ -11,3 +11,13 @@
     @extend .list-inline;
     margin: 0;
 }
+
+.footnote-nav a {
+    color: #fff;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $brand-primary;
+    }
+}
