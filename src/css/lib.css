@@ -193,8 +193,8 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial;
-  font-size: 14px;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+  font-size: 15px;
   line-height: 1.42857;
   color: #333333;
   background-color: #fff; }
@@ -248,8 +248,8 @@ img {
   border-radius: 50%; }
 
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 21px;
+  margin-bottom: 21px;
   border: 0;
   border-top: 1px solid #eeeeee; }
 
@@ -301,8 +301,8 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 20px;
-  margin-bottom: 10px; }
+  margin-top: 21px;
+  margin-bottom: 10.5px; }
   h1 small,
   h1 .small, .h1 small,
   .h1 .small,
@@ -317,8 +317,8 @@ h3, .h3 {
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-top: 10.5px;
+  margin-bottom: 10.5px; }
   h4 small,
   h4 .small, .h4 small,
   .h4 .small,
@@ -331,10 +331,10 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 24px; }
+  font-size: 26px; }
 
 h2, .h2 {
-  font-size: 22px; }
+  font-size: 24px; }
 
 h3, .h3 {
   font-size: 20px; }
@@ -343,26 +343,26 @@ h4, .h4 {
   font-size: 18px; }
 
 h5, .h5 {
-  font-size: 16px; }
+  font-size: 15px; }
 
 h6, .h6 {
   font-size: 14px; }
 
 p {
-  margin: 0 0 10px; }
+  margin: 0 0 10.5px; }
 
 .lead {
-  margin-bottom: 20px;
-  font-size: 16px;
+  margin-bottom: 21px;
+  font-size: 17px;
   font-weight: 300;
   line-height: 1.4; }
   @media (min-width: 768px) {
     .lead {
-      font-size: 21px; } }
+      font-size: 22.5px; } }
 
 small,
 .small {
-  font-size: 85%; }
+  font-size: 80%; }
 
 mark,
 .mark {
@@ -470,14 +470,14 @@ a.bg-danger:focus {
   background-color: #e4b9b9; }
 
 .page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
+  padding-bottom: 9.5px;
+  margin: 42px 0 21px;
   border-bottom: 1px solid #eeeeee; }
 
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10px; }
+  margin-bottom: 10.5px; }
   ul ul,
   ul ol,
   ol ul,
@@ -501,7 +501,7 @@ ol {
 
 dl {
   margin-top: 0;
-  margin-bottom: 20px; }
+  margin-bottom: 21px; }
 
 dt,
 dd {
@@ -541,9 +541,9 @@ abbr[data-original-title] {
   font-size: 90%; }
 
 blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  font-size: 17.5px;
+  padding: 10.5px 21px;
+  margin: 0 0 21px;
+  font-size: 18.75px;
   border-left: 5px solid #eeeeee; }
   blockquote p:last-child,
   blockquote ul:last-child,
@@ -584,7 +584,7 @@ blockquote.pull-right {
     content: '\00A0 \2014'; }
 
 address {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   font-style: normal;
   line-height: 1.42857; }
 
@@ -1118,8 +1118,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
+  margin-bottom: 21px;
+  font-size: 22.5px;
   line-height: inherit;
   color: #333333;
   border: 0;
@@ -1162,16 +1162,16 @@ input[type="checkbox"]:focus {
 output {
   display: block;
   padding-top: 7px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.42857;
   color: #555555; }
 
 .form-control {
   display: block;
   width: 100%;
-  height: 34px;
+  height: 35px;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.42857;
   color: #555555;
   background-color: #fff;
@@ -1217,7 +1217,7 @@ input[type="search"] {
   input[type="time"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
-    line-height: 34px; }
+    line-height: 35px; }
   input[type="date"].input-sm,
   .input-group-sm input[type="date"],
   input[type="time"].input-sm,
@@ -1254,7 +1254,7 @@ input[type="search"] {
   margin-bottom: 10px; }
   .radio label,
   .checkbox label {
-    min-height: 20px;
+    min-height: 21px;
     padding-left: 20px;
     margin-bottom: 0;
     font-weight: normal;
@@ -1313,7 +1313,7 @@ fieldset[disabled]
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
-  min-height: 34px; }
+  min-height: 36px; }
   .form-control-static.input-lg, .form-control-static.input-sm {
     padding-left: 0;
     padding-right: 0; }
@@ -1350,7 +1350,7 @@ select[multiple].input-sm {
 
 .form-group-sm .form-control-static {
   height: 30px;
-  min-height: 32px;
+  min-height: 33px;
   padding: 6px 10px;
   font-size: 12px;
   line-height: 1.5; }
@@ -1387,7 +1387,7 @@ select[multiple].input-lg {
 
 .form-group-lg .form-control-static {
   height: 46px;
-  min-height: 38px;
+  min-height: 39px;
   padding: 11px 16px;
   font-size: 18px;
   line-height: 1.33333; }
@@ -1395,7 +1395,7 @@ select[multiple].input-lg {
 .has-feedback {
   position: relative; }
   .has-feedback .form-control {
-    padding-right: 42.5px; }
+    padding-right: 43.75px; }
 
 .form-control-feedback {
   position: absolute;
@@ -1403,9 +1403,9 @@ select[multiple].input-lg {
   right: 0;
   z-index: 2;
   display: block;
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
   text-align: center;
   pointer-events: none; }
 
@@ -1511,7 +1511,7 @@ select[multiple].input-lg {
   color: #a94442; }
 
 .has-feedback label ~ .form-control-feedback {
-  top: 25px; }
+  top: 26px; }
 
 .has-feedback label.sr-only ~ .form-control-feedback {
   top: 0; }
@@ -1571,7 +1571,7 @@ select[multiple].input-lg {
 
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 27px; }
+  min-height: 28px; }
 
 .form-horizontal .form-group {
   margin-left: -15px;
@@ -1613,7 +1613,7 @@ select[multiple].input-lg {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.42857;
   border-radius: 0;
   -webkit-user-select: none;
@@ -2128,11 +2128,10 @@ body.noflow {
 
 #header {
   background: #090102;
-  position: fixed;
   height: 75px;
-  width: 100%;
-  transition: all 0.5s;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1; }
 
 #header .title {
@@ -2145,8 +2144,10 @@ body.noflow {
 
 #nav-main,
 #nav-social {
-  text-align: center;
-  transition: all 0.5s; }
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: center; }
 
 #nav-main {
   float: left;
@@ -2158,9 +2159,9 @@ body.noflow {
 #nav-main li a {
   color: #fff;
   display: block;
-  font-weight: 600;
-  padding: 28px 0;
-  text-transform: uppercase; }
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial;
+  font-size: 20px;
+  padding: 28px 0; }
   #nav-main li a:hover, #nav-main li a:active, #nav-main li a:focus {
     color: #d91c2c; }
 
@@ -2192,17 +2193,14 @@ body.noflow {
 
 #footer {
   background: #111;
+  bottom: 0;
   color: white;
-  width: 100%;
+  font-size: 14px;
   position: absolute;
-  bottom: 0; }
+  width: 100%; }
 
 #footer .promo-list {
   padding: 15px 30px; }
-
-#footer .promo .promo-title {
-  font-size: 16px;
-  text-transform: uppercase; }
 
 #nav-mobile {
   background: #111;
@@ -2226,7 +2224,7 @@ body.noflow {
 #nav-mobile-nav > li a {
   color: #fff;
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   padding: 15px 30px;
   text-transform: uppercase; }
   #nav-mobile-nav > li a:hover, #nav-mobile-nav > li a:active, #nav-mobile-nav > li a:focus {
@@ -2254,6 +2252,12 @@ body.noflow {
 @media all and (min-width: 767px) {
   #nav-mobile {
     display: none; } }
+
+h1, h2, h3,
+h4, h5, h6,
+.h1, .h2, .h3,
+.h4, .h5, .h6 {
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial; }
 
 html body a,
 html body button {
@@ -2348,13 +2352,13 @@ a.social:hover .fa-instagram, a.social:focus .fa-instagram, a.social:active .fa-
   background: #95153d; }
 
 .promo .promo-title {
-  font-size: 16px;
-  text-transform: uppercase; }
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial;
+  font-size: 20px; }
 
 .footnote {
   background: #090102;
   color: #fff;
-  font-size: 11px;
+  font-size: 12px;
   padding: 10px 30px;
   text-align: center; }
 

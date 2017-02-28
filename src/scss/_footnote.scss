@@ -1,8 +1,8 @@
 
 .footnote {
     background: $brand-secondary;
-    color: #fff;
-    font-size: 11px;
+    color: $brand-inverse;
+    font-size: $font-size-small;
     padding: 10px $grid-gutter-width;
     text-align: center;
 }
@@ -13,7 +13,7 @@
 }
 
 .footnote-nav a {
-    color: #fff;
+    color: $brand-inverse;
 
     &:hover,
     &:focus,

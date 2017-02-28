@@ -1,11 +1,10 @@
 
 #header {
     background: $brand-secondary;
-    position: fixed;
     height: 75px;
-    width: 100%;
-    transition: all 0.5s;
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 1;
 }
 
@@ -22,8 +21,8 @@
 #nav-main,
 #nav-social {
     @extend .list-inline;
+    @include transition(all 0.5s);
     text-align: center;
-    transition: all 0.5s;
 }
 
 #nav-main {
@@ -38,9 +37,9 @@
 #nav-main li a {
     color: #fff;
     display: block;
-    font-weight: 600;
+    font-family: $font-family-accent;
+    font-size: $font-size-h3;
     padding: 28px 0;
-    text-transform: uppercase;
 
     &:hover,
     &:active,

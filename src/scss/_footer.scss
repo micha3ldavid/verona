@@ -1,17 +1,13 @@
 
 #footer {
     background: #111;
-    color: white;
-    width: 100%;
-    position: absolute;
     bottom: 0;
+    color: white;
+    font-size: $font-size-h6;
+    position: absolute;
+    width: 100%;
 }
 
 #footer .promo-list {
     padding: $grid-gutter-width / 2 $grid-gutter-width;
-}
-
-#footer .promo .promo-title {
-    font-size: $font-size-h5;
-    text-transform: uppercase;
 }
