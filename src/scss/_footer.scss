@@ -1,6 +1,6 @@
 
 #footer {
-    background: #111;
+    background: #080b0e;
     bottom: 0;
     color: white;
     font-size: $font-size-h6;
@@ -9,5 +9,59 @@
 }
 
 #footer .promo-list {
-    padding: $grid-gutter-width / 2 $grid-gutter-width;
+    padding: ($grid-gutter-width / 2) $grid-gutter-width $grid-gutter-width;
+}
+
+#footer .promo-title {
+    margin-top: $grid-gutter-width / 2;
+}
+
+#footer .rowflex {
+    @extend .clearfix;
+    border-collapse: collapse;
+    display: table;
+    width: 100%;
+
+    .col {
+        display: table-cell;
+        padding-right: $grid-gutter-width / 2;
+        width: 33.3%;
+    }
+
+    .col:last-child {
+        padding-right: 0;
+    }
+}
+
+@media all and (max-width: $screen-xs-max) {
+
+    #footer .rowflex .col {
+        display: block;
+        float: left;
+        width: 50%;
+
+        &:last-child:before {
+            content: "";
+            clear: both;
+            display: table;
+            float: none;
+        }
+
+        &:last-child {
+            float: none;
+        }
+    }
+}
+
+@media all and (max-width: $screen-xs-min) {
+
+    #footer .rowflex {
+        display: block;
+    }
+
+    #footer .rowflex .col {
+        display: block;
+        float: none;
+        width: auto;
+    }
 }

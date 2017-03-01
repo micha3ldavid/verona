@@ -1,0 +1,16 @@
+
+.list-steps {
+    @extend .list-unstyled;
+    margin: 0;
+}
+
+.list-steps > li {
+    counter-increment: step-counter;
+
+    > a:before {
+        content: '0' counter(step-counter) '/ ';
+        color: $brand-accent;
+        font-family: $font-family-accent;
+        font-size: $font-size-small;
+    }
+}

@@ -30,16 +30,16 @@
     margin: 0;
 }
 
-#nav-main li + li {
+#nav-main li + li,
+#nav-social li + li {
     margin-left: ($grid-gutter-width / 2);
 }
 
 #nav-main li a {
     color: #fff;
     display: block;
-    font-family: $font-family-accent;
-    font-size: $font-size-h3;
     padding: 28px 0;
+    text-transform: uppercase;
 
     &:hover,
     &:active,
@@ -51,7 +51,21 @@
 #nav-social {
     position: absolute;
     right: $grid-gutter-width;
-    top: 22px;
+    top: 28px;
+}
+
+#nav-social li a {
+    color: #fff;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: #999;
+    }
+
+    .fa {
+        font-size: $font-size-h3;
+    }
 }
 
 #btn-nav-mobile {

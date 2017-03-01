@@ -1,14 +1,15 @@
 
 div#nav-mobile(aria-hidden="true")
-    ul#nav-mobile-nav
+    ul#nav-mobile-nav.list-steps
         each page in navigations.main
             li
                 a(href=page.path) #{page.label}
 
     div#nav-mobile-promos
-        div.row
-            div.col-xs-6
+        div.rowflex
+            div.col
                 include ../components/collaborate
-            div.col-xs-6
+            div.col
                 include ../components/commission
         include ../components/connect
+    include ./footnote

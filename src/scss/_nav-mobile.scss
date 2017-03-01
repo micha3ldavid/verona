@@ -1,35 +1,37 @@
 
 #nav-mobile {
-    background: #111;
-    color: white;
+    @include transition(opacity 0.3s);
+    background: #080b0e;
     bottom: 0;
-    display: block;
+    color: $brand-inverse;
+    left: 0;
+    opacity: 1;
+    overflow: auto;
     margin: 0;
-    padding: 0;
+    padding: ($grid-gutter-width / 2) $grid-gutter-width;
     position: fixed;
     top: 75px;
-    transition: height 0.5s;
     width: 100%;
     z-index: 2;
-    overflow: auto;
 
     &[aria-hidden="true"] {
-        display: none;
+        left: 100%;
+        opacity: 0;
     }
 }
 
 #nav-mobile-nav {
     @extend .list-unstyled;
 
-    > li {
+    li {
         border-bottom: 1px solid #333;
     }
 
-    > li a {
+    li a {
         color: #fff;
         display: block;
         font-size: $font-size-h5;
-        padding: ($grid-gutter-width / 2) $grid-gutter-width;
+        padding: $grid-gutter-width / 2 0;
         text-transform: uppercase;
 
         &:hover,
@@ -40,31 +42,59 @@
     }
 }
 
-#nav-mobile-promos {
-    padding: ($grid-gutter-width / 2) $grid-gutter-width;
-}
-
 #nav-mobile-close {
-    position: absolute;
-    top: 0;
-    right: 0;
     font-size: 30px;
-    background-color: $brand-secondary;
-    width: 75px;
     height: 75px;
+    background-color: $brand-secondary;
+    position: absolute;
+    right: 0;
     text-align: center;
+    top: 0;
+    width: 75px;
 
     .fa-close {
         color: #fff;
+        left: 12px;
+        margin-top: -16px;
         position: absolute;
         top: 50%;
-        margin-top: -16px;
-        left: 12px;
     }
+}
+
+#nav-mobile .rowflex {
+    border-collapse: collapse;
+    display: table;
+    width: 100%;
+
+    .col {
+        display: table-cell;
+        width: 50%;
+    }
+
+    .col:first-child {
+        padding-right: $grid-gutter-width / 2;
+    }
+}
+
+#nav-mobile .footnote {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
 }
 
 @media all and (min-width: $screen-xs-max) {
     #nav-mobile {
         display: none;
+    }
+}
+
+@media all and (max-width: $screen-xs-min) {
+
+    #nav-mobile .rowflex .col,
+    #nav-mobile .promo {
+        display: block;
+        margin-bottom: $grid-gutter-width / 2;
+        width: auto;
     }
 }
