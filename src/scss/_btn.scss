@@ -2,3 +2,13 @@
 .btn {
     text-transform: uppercase;
 }
+
+.btn-primary {
+
+    &:hover,
+    &:active,
+    &:focus {
+        background: $gray-2;
+        color: white;
+    }
+}

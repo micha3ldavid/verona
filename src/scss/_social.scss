@@ -1,57 +1,23 @@
 
 a.social {
-    color: white;
+    color: $gray-2;
+
+    .fa {
+        @include transition(color 0.5s);
+    }
 
     &:hover,
     &:focus,
     &:active {
-        color: #fff;
-    }
-}
 
-a.social .fa-facebook,
-a.social .fa-twitter,
-a.social .fa-instagram {
-    display: inline-block;
-    width: 28px;
-    height: 28px;
-    text-align: center;
-    transition: background-color 0.5s;
-    position: relative;
-
-    &:before {
-        position: absolute;
-        left: 0;
-        top: 8px;
-        width: 100%;
-    }
-}
-
-a.social .fa-facebook {
-    background-color: #3B5998;
-}
-
-a.social .fa-twitter {
-    background-color: #55ACEE;
-}
-
-a.social .fa-instagram {
-    background-color: #E12F67;
-}
-
-
-a.social {
-    &:hover,
-    &:focus,
-    &:active {
         .fa-facebook {
-            background: darken(#3B5998, 20%);
+            color: #3B5998;
         }
         .fa-twitter {
-            background: darken(#55ACEE, 20%);
+            color: #55ACEE;
         }
         .fa-instagram {
-            background: darken(#E12F67, 20%);
+            color: #E12F67;
         }
     }
 }

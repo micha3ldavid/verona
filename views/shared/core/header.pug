@@ -2,7 +2,7 @@
 header#header
     h1.title
         a(href="/")
-            img.logo(src="/dist/img/brand/logo.svg", alt="JULIANO LIMITED")
+            img.logo(src="/dist/img/brand/logo-d.svg", alt="JULIANO STREETWEAR")
 
     ol#nav-main.list-steps
         each page in navigations.main
@@ -12,7 +12,7 @@ header#header
     ul#nav-social
         each social in navigations.social
             li
-                a(href=social.path, target="_blank")
+                a.social(href=social.path, target="_blank")
                     span(role="presentation", class=social.classname)
                     span.sr-only #{social.label}
 

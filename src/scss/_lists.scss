@@ -9,8 +9,5 @@
 
     > a:before {
         content: '0' counter(step-counter) '/ ';
-        color: $brand-accent;
-        font-family: $font-family-accent;
-        font-size: $font-size-small;
     }
 }

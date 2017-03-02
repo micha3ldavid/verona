@@ -1,7 +1,7 @@
 
 .footnote {
     background: $brand-secondary;
-    color: $brand-inverse;
+    color: white;
     font-size: $font-size-small;
     padding: 10px $grid-gutter-width;
     text-align: center;
@@ -13,7 +13,7 @@
 }
 
 .footnote-nav a {
-    color: $brand-inverse;
+    color: white;
 
     &:hover,
     &:focus,

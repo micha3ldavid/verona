@@ -1,9 +1,7 @@
 
 html body a,
 html body button {
-    transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
+    @include transition(all 0.5s);
 
     &:hover,
     &:active,

@@ -6,10 +6,6 @@ div#nav-mobile(aria-hidden="true")
                 a(href=page.path) #{page.label}
 
     div#nav-mobile-promos
-        div.rowflex
-            div.col
-                include ../components/collaborate
-            div.col
-                include ../components/commission
+        include ../components/collaborate
+        include ../components/commission
         include ../components/connect
-    include ./footnote

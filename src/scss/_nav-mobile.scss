@@ -1,9 +1,9 @@
 
 #nav-mobile {
     @include transition(opacity 0.3s);
-    background: #080b0e;
+    background: #dfdfdf;
     bottom: 0;
-    color: $brand-inverse;
+    color: $gray-2;
     left: 0;
     opacity: 1;
     overflow: auto;
@@ -24,13 +24,15 @@
     @extend .list-unstyled;
 
     li {
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid $gray;
     }
 
     li a {
-        color: #fff;
+        color: $gray-2;
         display: block;
         font-size: $font-size-h5;
+        font-weight: 600;
+        letter-spacing: 0.6px;
         padding: $grid-gutter-width / 2 0;
         text-transform: uppercase;
 
@@ -40,47 +42,36 @@
             color: $brand-primary;
         }
     }
-}
 
-#nav-mobile-close {
-    font-size: 30px;
-    height: 75px;
-    background-color: $brand-secondary;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 75px;
-
-    .fa-close {
-        color: #fff;
-        left: 12px;
-        margin-top: -16px;
-        position: absolute;
-        top: 50%;
+    li:first-child a {
+        padding-top: 0;
     }
 }
 
-#nav-mobile .rowflex {
-    border-collapse: collapse;
-    display: table;
-    width: 100%;
+#nav-mobile-promos {
+    background: #c2c2c2;
+    margin-top: $grid-gutter-width / 2;
+    padding: $grid-gutter-width / 2;
 
-    .col {
-        display: table-cell;
+    .promo {
+        float: left;
         width: 50%;
     }
 
-    .col:first-child {
+    .promo:first-child {
         padding-right: $grid-gutter-width / 2;
     }
-}
 
-#nav-mobile .footnote {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    width: 100%;
+    .promo:last-child {
+        float: none;
+        width: 100%;
+    }
+
+    .promo:last-child:before {
+        clear: both;
+        content: "";
+        display: table;
+    }
 }
 
 @media all and (min-width: $screen-xs-max) {
@@ -91,10 +82,17 @@
 
 @media all and (max-width: $screen-xs-min) {
 
-    #nav-mobile .rowflex .col,
-    #nav-mobile .promo {
-        display: block;
-        margin-bottom: $grid-gutter-width / 2;
-        width: auto;
+    #nav-mobile-nav li a {
+        text-align: center;
+    }
+
+    #nav-mobile-promos .promo {
+        float: none;
+        text-align: center;
+        width: 100%;
+
+        &:first-child {
+            padding-right: 0;
+        }
     }
 }

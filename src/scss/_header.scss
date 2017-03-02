@@ -1,6 +1,11 @@
 
+//
+// default navbar - light themed
+// ------------------------------
+
 #header {
-    background: $brand-secondary;
+    background: $theme-light-bg;
+    border-bottom: 1px solid #dfdfdf;
     height: 75px;
     position: fixed;
     top: 0;
@@ -10,7 +15,7 @@
 
 #header .title {
     float: left;
-    margin: ($grid-gutter-width / 2) $grid-gutter-width;
+    margin: 15px $grid-gutter-width;
     text-align: center;
 }
 
@@ -36,9 +41,12 @@
 }
 
 #nav-main li a {
-    color: #fff;
+    color: $gray-2;
     display: block;
-    padding: 28px 0;
+    font-size: $font-size-small;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    padding: 30px 0;
     text-transform: uppercase;
 
     &:hover,
@@ -55,27 +63,21 @@
 }
 
 #nav-social li a {
-    color: #fff;
+    color: $gray-2;
+}
 
-    &:hover,
-    &:active,
-    &:focus {
-        color: #999;
-    }
-
-    .fa {
-        font-size: $font-size-h3;
-    }
+#nav-social li a .fa {
+    font-size: $font-size-h3;
 }
 
 #btn-nav-mobile {
-    color: #fff;
-    position: absolute;
-    top: 20px;
-    right: -200px;
+    color: $gray-2;
     opacity: 0;
     outline: 0;
-    transition: all 0.5s;
+    padding: 0;
+    position: absolute;
+    right: -200px;
+    top: 22px;
 }
 
 @media all and (max-width: $screen-xs-max) {
