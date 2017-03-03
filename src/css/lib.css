@@ -2123,6 +2123,10 @@ body.noflow {
   padding-bottom: 200px;
   position: relative; }
 
+body {
+  background: white url("/dist/img/bg/splash.jpg") 0 75px no-repeat;
+  background-size: 100% auto; }
+
 @media all and (max-width: 767px) {
   #app {
     padding-bottom: 320px; } }
