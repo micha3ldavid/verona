@@ -1,0 +1,10 @@
+
+.panel {
+    padding: $grid-gutter-width;
+}
+
+@media all and (max-width: $screen-xs-min) {
+    .panel {
+        padding: $grid-gutter-width 0;
+    }
+}

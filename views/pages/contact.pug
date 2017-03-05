@@ -2,6 +2,53 @@
 extends ../shared/layouts/base
 
 block content
-    div.container-fluid
-        div
-            | !{contact.markdown}
+    section.banner
+        img.banner-img(src=page.banner.img, alt=page.banner.alt)
+        div.banner-content
+            h3.banner-subtitle
+                | Headquarters
+            h2.banner-title #{page.banner.title}
+            div.banner-body
+                dl.dl
+                    dt
+                        span.sr-only
+                            | Telephone:
+                        span(aria-hidden="true")
+                            | T:
+                    dd
+                        | +1 408.728.3622
+                dl.dl
+                    dt
+                        span.sr-only
+                            | Email:
+                        span(aria-hidden="true")
+                            | E:
+                    dd
+                        a(href="mailto:julianocreative@gmail.com")
+                            | JulianoCreative@gmail.com
+    section.panel
+        header.panel-heading
+            h2.h3.panel-title
+                | Customers, Creatives, &amp; Commissions
+        div.panel-body
+            p
+                | For questions on how to <strong>cop your own piece</strong>, contact:
+                br
+                a(href="mailto:info.julianocreative@gmail.com")
+                    | info.julianocreative@gmail.com
+
+            p
+                | For questions about <strong>your order</strong>, contact:
+                br
+                a(href="mailto:customers.julianocreative@gmail.com")
+                    | customers.julianocreative@gmail.com
+
+            p
+                | For brands <strong>looking to collaborate</strong>, contact:
+                br
+                a(href="mailto:collab.julianocreative@gmail.com")
+                    | collab.julianocreative@gmail.com
+
+
+
+    include ../shared/core/footer

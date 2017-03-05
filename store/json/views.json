@@ -44,7 +44,15 @@
         "name": "contact",
         "view": "pages/contact",
         "path": "/contact",
-        "title": "Contact Us"
+        "title": "Contact Us",
+        "banner": {
+            "img": "/dist/img/bg/denver.jpg",
+            "alt": "Denver, Colorado Cityscape Artwork",
+            "title": "Denver, Colorado",
+            "desc": "",
+            "link": "",
+            "linktext": ""
+        }
     },
 
     "terms": {

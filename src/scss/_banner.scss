@@ -1,0 +1,74 @@
+
+.banner {
+    overflow: hidden;
+    padding-top: 47%;
+    position: relative;
+}
+
+.banner-img {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.banner-content {
+    color: #fff;
+    left: 30px;
+    position: absolute;
+    top: 25%;
+}
+
+.banner-title {
+    font-size: 54px;
+}
+
+.banner-subtitle {
+    font-size: 32px;
+}
+
+.banner-title,
+.banner-subtitle {
+    margin: 0 0 5px 0;
+}
+
+.banner-body {
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.banner-title,
+.banner-subtitle,
+.banner.body {
+    @include transition(font-size 0.5s);
+}
+
+@media all and (max-width: $screen-sm-min) {
+
+    .banner-title {
+        font-size: 34px;
+    }
+
+    .banner-subtitle {
+        font-size: 24px;
+    }
+
+    .banner-body {
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width: $screen-xs-min) {
+
+    .banner-title {
+        font-size: 24px;
+    }
+
+    .banner-subtitle {
+        font-size: 18px;
+    }
+
+    .banner-body {
+        font-size: 16px;
+    }
+}

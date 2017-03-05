@@ -1,0 +1,12 @@
+
+mixin banner (banner)
+
+    div.banner
+        img.banner-img(src=banner.img, alt=banner.alt)
+        div.banner-content
+            h2.banner-title #{banner.title}
+            if banner.desc
+                p.banner-desc #{banner.desc}
+            if banner.link
+                a.banner-title(href=banner.link)
+                    span.sr-only #{banner.linktext}

@@ -2123,10 +2123,6 @@ body.noflow {
   padding-bottom: 200px;
   position: relative; }
 
-body {
-  background: white url("/dist/img/bg/splash.jpg") 0 75px no-repeat;
-  background-size: 100% auto; }
-
 @media all and (max-width: 767px) {
   #app {
     padding-bottom: 320px; } }
@@ -2421,3 +2417,71 @@ a.social {
   counter-increment: step-counter; }
   .list-steps > li > a:before {
     content: "0" counter(step-counter) "/ "; }
+
+.panel {
+  padding: 30px; }
+
+@media all and (max-width: 480px) {
+  .panel {
+    padding: 30px 0; } }
+
+.banner {
+  overflow: hidden;
+  padding-top: 47%;
+  position: relative; }
+
+.banner-img {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.banner-content {
+  color: #fff;
+  left: 30px;
+  position: absolute;
+  top: 25%; }
+
+.banner-title {
+  font-size: 54px; }
+
+.banner-subtitle {
+  font-size: 32px; }
+
+.banner-title,
+.banner-subtitle {
+  margin: 0 0 5px 0; }
+
+.banner-body {
+  font-size: 24px;
+  padding: 10px 0; }
+
+.banner-title,
+.banner-subtitle,
+.banner.body {
+  -webkit-transition: font-size 0.5s;
+  -o-transition: font-size 0.5s;
+  transition: font-size 0.5s; }
+
+@media all and (max-width: 768px) {
+  .banner-title {
+    font-size: 34px; }
+  .banner-subtitle {
+    font-size: 24px; }
+  .banner-body {
+    font-size: 16px; } }
+
+@media all and (max-width: 480px) {
+  .banner-title {
+    font-size: 24px; }
+  .banner-subtitle {
+    font-size: 18px; }
+  .banner-body {
+    font-size: 16px; } }
+
+.dl {
+  margin: 0; }
+  .dl dt, .dl dd {
+    display: inline-block; }
+  .dl dt {
+    min-width: 50px; }

@@ -1,0 +1,12 @@
+
+.dl {
+    margin: 0;
+
+    dt, dd {
+        display: inline-block;
+    }
+
+    dt {
+        min-width: 50px;
+    }
+}
