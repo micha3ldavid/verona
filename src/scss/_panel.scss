@@ -3,8 +3,16 @@
     padding: $grid-gutter-width;
 }
 
-@media all and (max-width: $screen-xs-min) {
-    .panel {
-        padding: $grid-gutter-width 0;
-    }
+.panel-title {
+    background: #1c1b1a;
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    padding: 15px 30px;
+    position: relative;
+    left: -30px;
+}
+
+.panel-body {
+    padding: 15px 0;
 }
