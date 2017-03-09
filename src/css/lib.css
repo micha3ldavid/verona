@@ -2014,11 +2014,11 @@ a.label:hover, a.label:focus {
   padding-left: 0;
   list-style: none; }
 
-.clearfix:before, #footer .rowflex:before, .clearfix:after, #footer .rowflex:after {
+.clearfix:before, #footer .promo-list:before, .clearfix:after, #footer .promo-list:after {
   content: " ";
   display: table; }
 
-.clearfix:after, #footer .rowflex:after {
+.clearfix:after, #footer .promo-list:after {
   clear: both; }
 
 .center-block {
@@ -2120,12 +2120,16 @@ body.noflow {
 #app {
   min-height: 100vh;
   padding-top: 75px;
-  padding-bottom: 200px;
+  padding-bottom: 230px;
   position: relative; }
 
 @media all and (max-width: 767px) {
   #app {
     padding-bottom: 320px; } }
+
+@media all and (max-width: 480px) {
+  #app {
+    padding-bottom: 437px; } }
 
 #header {
   background: #fdfdfd;
@@ -2211,42 +2215,30 @@ body.noflow {
   width: 100%; }
 
 #footer .promo-list {
-  padding: 15px 30px 30px; }
+  padding: 30px; }
 
-#footer .promo-title {
-  margin-top: 15px; }
-
-#footer .rowflex {
-  border-collapse: collapse;
-  display: table;
-  width: 100%; }
-  #footer .rowflex .col {
-    display: table-cell;
-    padding-right: 15px;
-    width: 33.3%; }
-  #footer .rowflex .col:last-child {
+#footer .promo-list .promo {
+  float: left;
+  padding-right: 15px;
+  width: 33.3%; }
+  #footer .promo-list .promo:last-child {
     padding-right: 0; }
 
 @media all and (max-width: 767px) {
-  #footer .rowflex .col {
-    display: block;
-    float: left;
+  #footer .promo-list .promo {
     width: 50%; }
-    #footer .rowflex .col:last-child:before {
-      content: "";
-      clear: both;
-      display: table;
-      float: none; }
-    #footer .rowflex .col:last-child {
-      float: none; } }
+    #footer .promo-list .promo:last-child {
+      padding-top: 30px;
+      width: 100%; } }
 
 @media all and (max-width: 480px) {
-  #footer .rowflex {
-    display: block; }
-  #footer .rowflex .col {
-    display: block;
+  #footer .promo-list .promo {
     float: none;
-    width: auto; } }
+    width: auto;
+    padding: 30px 0 0;
+    text-align: center; }
+    #footer .promo-list .promo:first-child {
+      padding-top: 0; } }
 
 #nav-mobile {
   -webkit-transition: opacity 0.3s;
@@ -2393,12 +2385,13 @@ a.social {
 
 .promo .promo-title {
   font-size: 14px;
+  margin-top: 0;
   text-transform: uppercase; }
 
 .footnote {
   background: #4d4e49;
   color: white;
-  font-size: 14px;
+  font-size: 12px;
   padding: 10px 30px;
   text-align: center; }
 
@@ -2431,7 +2424,7 @@ a.social {
   left: -30px; }
 
 .panel-body {
-  padding: 15px 0; }
+  padding: 30px 0 0; }
 
 .banner {
   background-color: #252525;
@@ -2449,7 +2442,9 @@ a.social {
   color: #fff;
   left: 30px;
   position: absolute;
-  top: 10%; }
+  text-shadow: 0 0 15px #000;
+  top: 50%;
+  transform: translateY(-50%); }
 
 .banner-title {
   font-size: 54px; }
@@ -2472,6 +2467,11 @@ a.social {
   -o-transition: font-size 0.5s;
   transition: font-size 0.5s; }
 
+.banner-body a {
+  color: #fff; }
+  .banner-body a:hover, .banner-body a:active, .banner-body a:focus {
+    color: #fff; }
+
 @media all and (max-width: 768px) {
   .banner-title {
     font-size: 34px; }
@@ -2493,4 +2493,4 @@ a.social {
   .dl dt, .dl dd {
     display: inline-block; }
   .dl dt {
-    min-width: 50px; }
+    min-width: 25px; }

@@ -14,12 +14,18 @@ body.noflow {
 #app {
     min-height: 100vh;
     padding-top: 75px;
-    padding-bottom: 200px;
+    padding-bottom: 230px;
     position: relative;
 }
 
 @media all and (max-width: $screen-xs-max) {
     #app {
         padding-bottom: 320px;
+    }
+}
+
+@media all and (max-width: $screen-xs-min) {
+    #app {
+        padding-bottom: 437px;
     }
 }
