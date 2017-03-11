@@ -20,7 +20,15 @@
         "name": "customs",
         "view": "pages/customs",
         "path": "/customs",
-        "title": "Customs"
+        "title": "Customs",
+        "banner": {
+            "img": "/dist/img/bg/customs-banner.jpg",
+            "alt": "Custom 1950s Style Biker Jacket",
+            "title": "Customs",
+            "desc": "",
+            "link": "",
+            "linktext": ""
+        }
     },
 
     "vision": {
@@ -47,7 +55,7 @@
         "title": "Contact Us",
         "banner": {
             "img": "/dist/img/bg/denver.jpg",
-            "alt": "Denver, Colorado Cityscape Artwork",
+            "alt": "Denver RiNo District",
             "title": "Denver, Colorado",
             "desc": "",
             "link": "",

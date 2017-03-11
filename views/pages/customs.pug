@@ -2,6 +2,62 @@
 extends ../shared/layouts/base
 
 block content
-    div.container-fluid
-        p
-            | Customs
+    section.banner
+        img.banner-img(src=page.banner.img, alt=page.banner.alt)
+        div.banner-content
+            h2.banner-title #{page.banner.title}
+            div.banner-body
+                dl.dl
+                    dt
+                        span.sr-only
+                            | Telephone:
+                        span(aria-hidden="true")
+                            | T:
+                    dd
+                        | +1 408.728.3622
+                dl.dl
+                    dt
+                        span.sr-only
+                            | Email:
+                        span(aria-hidden="true")
+                            | E:
+                    dd
+                        a(href="mailto:julianocreative@gmail.com")
+                            | JulianoCreative@gmail.com
+
+    section.panel
+        header.panel-heading
+            h2.h3.panel-title
+                | How it Works
+        div.panel-body
+            ol
+                li
+                    h4
+                        | Fill out the form below.
+                    p
+                        | I'll receive your request within 24 to 48 hours.
+
+                li
+                    h4
+                        | I'll contact you via email.
+                    p
+                        | We'll then talk about your ideas and the clothing you'd like to use.
+
+                li
+                    h4
+                        | I'll start work on the ideas we come up with.
+                    p
+                        | If you already know what you want, great.
+                        | If not, this is the time where I'll come up with some concept art.
+
+                li
+                    h4
+                        | I get creating.
+                    p
+                        | Once we've decided on the direction, I'll create the finishing product.
+
+                li
+                    h4
+                        | You wear it like nobody's businesss.
+                    p
+                        | Once I'm finished, your order will be shipped along with care instructions and a dope little certificate showing you own a custom piece of awesome.
