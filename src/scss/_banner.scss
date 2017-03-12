@@ -23,11 +23,13 @@
 }
 
 .banner-title {
-    font-size: 54px;
+    font-size: 62px;
+    font-weight: 300;
 }
 
 .banner-subtitle {
-    font-size: 26px;
+    font-size: 32px;
+    font-weight: 300;
 }
 
 .banner-title,
@@ -59,11 +61,11 @@
 @media all and (max-width: $screen-sm-min) {
 
     .banner-title {
-        font-size: 34px;
+        font-size: 42px;
     }
 
     .banner-subtitle {
-        font-size: 18px;
+        font-size: 28px;
     }
 
     .banner-body {
@@ -74,11 +76,11 @@
 @media all and (max-width: $screen-xs-min) {
 
     .banner-title {
-        font-size: 24px;
+        font-size: 34px;
     }
 
     .banner-subtitle {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .banner-body {

@@ -2447,10 +2447,12 @@ a.social {
   transform: translateY(-50%); }
 
 .banner-title {
-  font-size: 54px; }
+  font-size: 62px;
+  font-weight: 300; }
 
 .banner-subtitle {
-  font-size: 26px; }
+  font-size: 32px;
+  font-weight: 300; }
 
 .banner-title,
 .banner-subtitle {
@@ -2474,17 +2476,17 @@ a.social {
 
 @media all and (max-width: 768px) {
   .banner-title {
-    font-size: 34px; }
+    font-size: 42px; }
   .banner-subtitle {
-    font-size: 18px; }
+    font-size: 28px; }
   .banner-body {
     font-size: 16px; } }
 
 @media all and (max-width: 480px) {
   .banner-title {
-    font-size: 24px; }
+    font-size: 34px; }
   .banner-subtitle {
-    font-size: 18px; }
+    font-size: 22px; }
   .banner-body {
     font-size: 16px; } }
 
