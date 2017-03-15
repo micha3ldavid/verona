@@ -7,40 +7,75 @@ block content
         div.banner-content
             h2.banner-title #{page.banner.title}
             div.banner-body
+                | One-of-a-kind pieces
+                br
+                | made to fit your individual style.
 
     section.panel
         header.panel-heading
             h2.h3.panel-title
                 | How it Works
         div.panel-body
-            ol
-                li
-                    h4
-                        | Fill out the form below.
-                    p
-                        | I'll receive your request within 24 to 48 hours.
+            ol.list-steps
+                li.step
+                    div.step-heading
+                        h4.step-title
+                            | Think it
+                    div.step-body
+                        p
+                            | Fill out the form below.
+                            | I'll receive your request within 24 to 48 hours and contact you via email.
+                            | Once in contact, we'll talk about your ideas and types of clothing you'd like to use.
 
-                li
-                    h4
-                        | I'll contact you via email.
-                    p
-                        | We'll then talk about your ideas and the clothing you'd like to use.
+                li.step
+                    div.step-heading
+                        h4.step-title
+                            | Design it
+                    div.step-body
+                        p
+                            | If you already know what you want then great; we can skip this step and move right to step 3.
+                            | If not, this is the time where I'll come up with concept art.
+                            | I'll send you sketches, references, and ideas to give you a visual of what the final piece will look like.
 
-                li
-                    h4
-                        | I'll start work on the ideas we come up with.
-                    p
-                        | If you already know what you want, great.
-                        | If not, this is the time where I'll come up with some concept art.
+                li.step
+                    div.step-heading
+                        h4.step-title
+                            | Create it
+                    div.step-body
+                        p
+                            | Once we've decided on a direction, I'll create the finishing product.
+                            | The time it takes depends on the size of your order and detail of the work being done.
+                            | Most orders take five to seven days to complete and I give each client an estimate of what they can expect.
 
-                li
-                    h4
-                        | I get creating.
-                    p
-                        | Once we've decided on the direction, I'll create the finishing product.
+                li.step
+                    div.step-heading
+                        h4.step-title
+                            | Rock it
+                    div.step-body
+                        p
+                            | Once finished, your order will be shipped along with any special care instructions necessary.
+                            | I'll also notify you when your order ships so you may track it and know when to expect it.
 
-                li
-                    h4
-                        | You wear it like nobody's businesss.
-                    p
-                        | Once I'm finished, your order will be shipped along with care instructions and a dope little certificate showing you own a custom piece of awesome.
+        aside.small
+            | *Questions? Visit the Q&amp;A page.
+
+    section.panel(style="background-color: #333; background-image: url('" + page.banner.img + "')")
+        header.panel-heading.sr-only
+            h2.panel-title
+                | Customs Form
+        div.panel-body
+            form(method="post", action="/customs")
+            fieldset.form-group
+                div.row
+                    div.col-sm-6
+                        input.form-control(type="text", name="first-name", placeholder="First Name")
+                        input.form-control(type="text", name="last-name", placeholder="Last Name")
+                    div.col-sm-6
+                        div.mk-sm-root
+                            select.mk-sm(name="article-type")
+                                option(disabled) Choose type
+            fieldset.form-group
+                textarea.form-control(rows="10", placeholder="Tell me a little about what you'd like...")
+            fieldset.form-group
+                button.btn.btn-primary(type="submit")
+                    | Send Request

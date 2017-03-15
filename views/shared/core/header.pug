@@ -2,9 +2,9 @@
 header#header
     h1.title
         a(href="/")
-            img.logo(src="/dist/img/brand/logo-d.svg", alt="JULIANO STREETWEAR")
+            img.logo(src="/dist/img/brand/logo.svg", alt="JULIANO STREETWEAR")
 
-    ol#nav-main.list-steps
+    ol#nav-main.list-nav
         each page in navigations.main
             li
                 a(href=page.path) #{page.label}

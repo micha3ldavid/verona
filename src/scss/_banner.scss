@@ -15,21 +15,11 @@
 
 .banner-content {
     color: #fff;
-    left: 30px;
+    left: $grid-gutter-width;
     position: absolute;
-    text-shadow: 0 0 15px #000;
+    text-shadow: 0 0 10px #000;
     top: 50%;
     transform: translateY(-50%);
-}
-
-.banner-title {
-    font-size: 62px;
-    font-weight: 300;
-}
-
-.banner-subtitle {
-    font-size: 32px;
-    font-weight: 300;
 }
 
 .banner-title,
@@ -37,9 +27,18 @@
     margin: 0 0 5px 0;
 }
 
+.banner-subtitle {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.banner-title {
+    font-size: 62px;
+    font-weight: 300;
+}
+
 .banner-body {
     font-size: 18px;
-    padding: 10px 0;
 }
 
 .banner-title,

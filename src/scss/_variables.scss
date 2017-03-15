@@ -3,6 +3,8 @@ $fa-font-path: "../fonts";
 
 $theme-light-bg: #fdfdfd;
 
+// bootstrap
+
 $brand-primary: #ac0000;
 $brand-secondary: #004a4a;
 
@@ -16,17 +18,17 @@ $gray-lighter:  #d6d6d6;
 $gray-1: #080808;
 $gray-2: #252525;
 
-$font-family-sans-serif: 'Raleway', 'Helvetica Neue', Helvetica, Arial;
+$font-family-sans-serif: 'Lato', 'Helvetica Neue', Helvetica, Arial;
 
 $font-size-base:  16px;
 $font-size-large: 18px;
 $font-size-small: 14px;
 
-$font-size-h1: 26px;
-$font-size-h2: 24px;
-$font-size-h3: 20px;
+$font-size-h1: 30px;
+$font-size-h2: 26px;
+$font-size-h3: 22px;
 $font-size-h4: 18px;
-$font-size-h5: 15px;
+$font-size-h5: 16px;
 $font-size-h6: 14px;
 
 $border-radius-base: 0;
@@ -34,3 +36,11 @@ $border-radius-base: 0;
 $btn-primary-color:  $gray-2;
 $btn-primary-bg:     transparent;
 $btn-primary-border: $gray-2;
+
+// mk-ui
+
+$mk-primary: $brand-primary;
+$mk-secondary: $brand-secondary;
+
+$mk-sm-trigger-color: #fff;
+$mk-sm-option-selected-char: '';

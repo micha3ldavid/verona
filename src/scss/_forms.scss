@@ -1,0 +1,30 @@
+
+
+.form-control {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0;
+    border-width: 0 0 1px 0;
+    color: #fff;
+    margin: 15px 0;
+
+    &::-webkit-input-placeholder {
+        color: #fff;
+    }
+
+    &::-ms-input-placeholder {
+        color: #fff;
+    }
+
+    &::-moz-placeholder {
+        color: #fff;
+    }
+}
+
+textarea.form-control {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+select.form-control {
+    border-radius: 0;
+}

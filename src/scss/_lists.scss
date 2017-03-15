@@ -1,13 +1,46 @@
 
+.list-nav {
+    @extend .list-unstyled;
+    margin: 0;
+}
+
+.list-nav > li {
+    counter-increment: step-counter;
+
+    > a:before {
+        content: '0' counter(step-counter) '/ ';
+    }
+}
+
 .list-steps {
     @extend .list-unstyled;
     margin: 0;
 }
 
-.list-steps > li {
+.list-steps > .step {
+    background: crimson;
+    color: white;
     counter-increment: step-counter;
+    float: left;
+    padding: 10px $grid-gutter-width $grid-gutter-width;
+    position: relative;
+    width: 50%;
+}
 
-    > a:before {
-        content: '0' counter(step-counter) '/ ';
+.list-steps .step-body {
+    padding: ($grid-gutter-width / 2) 0 0;
+    font-weight: 300;
+    line-height: 1.6;
+
+    &:before {
+        background: white;
+        color: #333;
+        content: '0' counter(step-counter);
+        font-size: $font-size-h1;
+        font-weight: 300;
+        padding: 5px 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 }

@@ -26,14 +26,8 @@
 @import "./node_modules/font-awesome/scss/core";
 @import "./node_modules/font-awesome/scss/larger";
 
-.#{$fa-css-prefix}-instagram:before { content: $fa-var-instagram; }
-.#{$fa-css-prefix}-facebook:before { content: $fa-var-facebook; }
-.#{$fa-css-prefix}-twitter:before { content: $fa-var-twitter; }
-.#{$fa-css-prefix}-close:before,
-.#{$fa-css-prefix}-times:before { content: $fa-var-times; }
-.#{$fa-css-prefix}-navicon:before,
-.#{$fa-css-prefix}-reorder:before,
-.#{$fa-css-prefix}-bars:before { content: $fa-var-bars; }
+@import "./node_modules/mk-ui/dist/scss/variables";
+@import "./node_modules/mk-ui/dist/scss/selectmenu";
 
 //
 // site styles
@@ -44,7 +38,9 @@
 @import "footer";
 @import "nav-mobile";
 @import "headings";
+@import "forms";
 @import "links";
+@import "icons";
 @import "btn";
 @import "card";
 @import "social";
@@ -54,3 +50,4 @@
 @import "panel";
 @import "banner";
 @import "dl";
+@import "mk";
