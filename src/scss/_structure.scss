@@ -2,6 +2,7 @@
 html,
 body {
     background-color: $theme-light-bg;
+    font-weight: 300;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -14,18 +15,5 @@ body.noflow {
 #app {
     min-height: 100vh;
     padding-top: 75px;
-    padding-bottom: 230px;
     position: relative;
-}
-
-@media all and (max-width: $screen-xs-max) {
-    #app {
-        padding-bottom: 320px;
-    }
-}
-
-@media all and (max-width: $screen-xs-min) {
-    #app {
-        padding-bottom: 475px;
-    }
 }

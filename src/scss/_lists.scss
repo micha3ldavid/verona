@@ -14,33 +14,60 @@
 
 .list-steps {
     @extend .list-unstyled;
+    @extend .clearfix;
     margin: 0;
 }
 
 .list-steps > .step {
-    background: crimson;
-    color: white;
     counter-increment: step-counter;
     float: left;
-    padding: 10px $grid-gutter-width $grid-gutter-width;
+    min-height: 300px;
     position: relative;
     width: 50%;
+
+    &:nth-child(odd) {
+        padding-right: $grid-gutter-width / 2;
+    }
+
+    &:nth-child(even) {
+        padding-left: $grid-gutter-width / 2;
+    }
+
+    &:before {
+        background: #fff;
+        border: 1px solid #333;
+        border-radius: 80%;
+        color: #333;
+        content: '0' counter(step-counter);
+        font-size: $font-size-large;
+        height: 40px;
+        padding: 6px 0 0 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 20px;
+        width: 40px;
+
+        @media all and (max-width: $screen-xs) {
+            top: 8px;
+        }
+    }
+
+    @media all and (max-width: $screen-xs) {
+        float: none;
+        min-height: 0;
+        margin-bottom: $grid-gutter-width;
+        padding: 0 !important;
+        width: 100%;
+    }
+}
+
+.list-steps .step-heading {
+    border-bottom: 1px solid #333;
 }
 
 .list-steps .step-body {
     padding: ($grid-gutter-width / 2) 0 0;
     font-weight: 300;
     line-height: 1.6;
-
-    &:before {
-        background: white;
-        color: #333;
-        content: '0' counter(step-counter);
-        font-size: $font-size-h1;
-        font-weight: 300;
-        padding: 5px 10px;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
 }
