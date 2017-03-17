@@ -2493,12 +2493,6 @@ h4, h5, h6,
   border-width: 0 0 1px 0;
   color: #fff;
   margin: 15px 0; }
-  .form-control::-webkit-input-placeholder {
-    color: #fff; }
-  .form-control::-ms-input-placeholder {
-    color: #fff; }
-  .form-control::-moz-placeholder {
-    color: #fff; }
 
 textarea.form-control {
   background-color: rgba(0, 0, 0, 0.2); }
@@ -2669,6 +2663,16 @@ a.social {
 
 .panel {
   padding: 30px; }
+  .panel.panel-bg {
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom left; }
+    @media all and (orientation: portrait) {
+      .panel.panel-bg {
+        background-size: auto 100%; } }
+  .panel.panel-customs {
+    background-image: url("/dist/img/bg/customs-form.jpg"); }
 
 .panel-title {
   background: #1c1b1a;

@@ -1,6 +1,21 @@
 
 .panel {
     padding: $grid-gutter-width;
+
+    &.panel-bg {
+        background-color: #333;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: bottom left;
+
+        @media all and (orientation: portrait) {
+            background-size: auto 100%;
+        }
+    }
+
+    &.panel-customs {
+        background-image: url('/dist/img/bg/customs-form.jpg');
+    }
 }
 
 .panel-title {
