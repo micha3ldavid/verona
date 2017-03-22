@@ -1,11 +1,11 @@
 
-var home = require('./views/home'),
-    vision = require('./views/vision'),
-    details = require('./views/details'),
-    contact = require('./views/contact'),
-    customs = require('./views/customs'),
-    terms = require('./views/terms'),
-    errors = require('./views/errors');
+var home =      require('./controllers/home'),
+    vision =    require('./controllers/vision'),
+    details =   require('./controllers/details'),
+    contact =   require('./controllers/contact'),
+    customs =   require('./controllers/customs'),
+    terms =     require('./controllers/terms'),
+    errors =    require('./controllers/errors');
 
 module.exports = function (express, app) {
     //

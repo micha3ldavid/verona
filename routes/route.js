@@ -1,14 +1,8 @@
 
 var statics = require('./static'),
-    views = require('./views');
+    controllers = require('./controllers');
 
 module.exports = function ( express, app ) {
-  //
-  // load static directories
-  // --------------------------
   statics(express, app);
-  //
-  // load pages
-  // ---------------------------
-  views(express, app);
+  controllers(express, app);
 };

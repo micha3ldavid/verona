@@ -64,18 +64,28 @@ block content
             h2.panel-title
                 | Customs Form
         div.panel-body
-            form(method="post", action="/customs")
-            fieldset.form-group
-                div.row
-                    div.col-sm-6
-                        input.form-control(type="text", name="first-name", placeholder="First Name")
-                        input.form-control(type="text", name="last-name", placeholder="Last Name")
-                    div.col-sm-6
-                        div.mk-sm-root
-                            select.mk-sm(name="article-type")
-                                option(disabled) Choose type
-            fieldset.form-group
-                textarea.form-control(rows="10", placeholder="Tell me a little about what you'd like...")
-            fieldset.form-group
-                button.btn.btn-primary(type="submit")
-                    | Send Request
+            form(method="post", action=mailer.params.action)
+                fieldset.form-group
+                    div.row
+                        div.col-sm-6
+                            p.fstyle-1
+                                | Hi, my name is
+                            input.form-control(type="text", name="firstname", placeholder=mailer.params.firstname)
+                            input.form-control(type="text", name="lastname", placeholder=mailer.params.lastname)
+                            input.form-control(type="text", name="email", placeholder=mailer.params.email)
+                        div.col-sm-6
+                            p.fstyle-1
+                                | And I'm interested in
+                            div.mk-sm-root
+                                select.mk-sm(name="type")
+                                    each type, i in mailer.params.types
+                                        option(value=i) #{type}
+                            p.fstyle-1
+                                | With style/artwork like
+                            input.form-control(type="text", name="reference-1", placeholder=mailer.params['reference-1'])
+                            input.form-control(type="text", name="reference-2", placeholder=mailer.params['reference-2'])
+                fieldset.form-group
+                    textarea.form-control(name="details", rows="10", placeholder=mailer.params.details)
+                fieldset.form-group
+                    button.btn(type="submit")
+                        | Ready? Send My Request

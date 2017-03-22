@@ -19,21 +19,9 @@ module.exports = {
         ext: ".json"
     },
 
-    "contact": {
-        json: false,
-        path: "md/contact",
-        ext: ".md"
-    },
-
-    "terms": {
-        json: false,
-        path: "md/terms",
-        ext: ".md"
-    },
-
-    "vision": {
-        json: false,
-        path: "md/vision",
-        ext: ".md"
+    "mail": {
+        json: true,
+        path: "json/mail",
+        ext: ".json"
     }
 };

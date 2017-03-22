@@ -17,11 +17,13 @@
   },
   "homepage": "https://github.com/micha3ldavid/verona#readme",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "bootstrap-sass": "^3.3.7",
     "express": "^4.14.1",
     "font-awesome": "^4.7.0",
     "marked": "^0.3.6",
     "mk-ui": "^0.0.37",
+    "nodemailer": "^3.1.7",
     "pug": "^2.0.0-beta11"
   },
   "devDependencies": {

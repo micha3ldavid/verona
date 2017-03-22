@@ -2161,8 +2161,8 @@ a.label:hover, a.label:focus {
 
 .mk-sm-trigger[aria-expanded="true"],
 .mk-sm-trigger.focus {
-  color: #004a4a;
-  border-color: #004a4a; }
+  color: #ac0000;
+  border-color: #ac0000; }
 
 .mk-sm-trigger.disabled {
   color: #666;
@@ -2193,7 +2193,7 @@ a.label:hover, a.label:focus {
 
 .mk-sm-list {
   background: white;
-  border-top: 1px solid #004a4a;
+  border-top: 1px solid #ac0000;
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.4);
   display: none;
   opacity: 0;
@@ -2262,7 +2262,7 @@ a.label:hover, a.label:focus {
 
 .mk-sm-option[aria-selected="true"]:after {
   color: #ac0000;
-  content: "";
+  content: ".";
   font-size: 2rem;
   position: absolute;
   top: 0;
@@ -2486,16 +2486,43 @@ h4, h5, h6,
   font-family: "Gotham", Futura, sans-serif;
   text-transform: uppercase; }
 
+.fstyle-1 {
+  background: #000;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  margin: 0;
+  padding: 6px 10px;
+  text-transform: uppercase; }
+
 .form-control {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 0;
   border-width: 0 0 1px 0;
   color: #fff;
-  margin: 15px 0; }
+  margin: 30px 0; }
+  .form-control:focus {
+    background: rgba(0, 0, 0, 0.4);
+    border-color: #ac0000;
+    box-shadow: none;
+    outline: 0; }
+  .form-control::-webkit-input-placeholder {
+    color: #ccc;
+    font-style: italic; }
+  .form-control::-ms-input-placeholder {
+    color: #ccc;
+    font-style: italic; }
+  .form-control::-moz-placeholder {
+    color: #ccc;
+    font-style: italic; }
 
 textarea.form-control {
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: rgba(0, 0, 0, 0.4);
+  resize: vertical; }
 
 select.form-control {
   border-radius: 0; }
@@ -2667,7 +2694,8 @@ a.social {
     background-color: #333;
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: bottom left; }
+    background-position: bottom left;
+    color: #fff; }
     @media all and (orientation: portrait) {
       .panel.panel-bg {
         background-size: auto 100%; } }
@@ -2754,6 +2782,9 @@ a.social {
   .dl dt {
     min-width: 25px; }
 
+.mk-sm-root {
+  margin: 30px 0; }
+
 .mk-sm-root,
 .mk-sm-shadow {
   display: block; }
@@ -2762,4 +2793,10 @@ a.social {
   width: 100%; }
 
 .mk-sm-trigger {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   border-color: #fff; }
+  .mk-sm-trigger.focus {
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff; }

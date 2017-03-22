@@ -1,0 +1,46 @@
+{
+    "transport":
+    {
+        "service": "gmail",
+        "user": "transport.julianocreative@gmail.com",
+        "pass": "]u%aR[\\/d`(k!9W}",
+        "customs":
+        {
+            "action": "/customs",
+            "from": "\"Juliano Services\" <transparent.julianocreative@gmail.com>",
+            "to": "julianocreative@gmail.com",
+            "subject": "Customs Request",
+            "params": {
+                "firstname": "*First Name",
+                "lastname": "*Last Name",
+                "email": "*Email (name@example.com)",
+                "reference-1": "Reference Image Url",
+                "reference-2": "Reference Image Url",
+                "details": "Tell me more about what you'd like...",
+                "types":
+                [
+                    "Leather Jackets",
+                    "Denim Jackets",
+                    "Denim Jeans",
+                    "Flannels",
+                    "Hoodies",
+                    "Shirts",
+                    "Sneakers/Boots"
+                ]
+            }
+        },
+        "collab":
+        {
+            "from": "\"Juliano Mailer\" <transparent.julianocreative@gmail.com>",
+            "to": "julianocreative@gmail.com",
+            "subject": "Collaboration Request",
+            "params": {
+                "firstname": "*First Name",
+                "lastname": "*Last Name",
+                "company": "*Company Name",
+                "email": "*Email (name@example.com)",
+                "details": "Tell me more about your collaboration ideas"
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+
+
+h1, h2, h3,
+h4, h5, h6,
+.h1, .h2, .h3,
+.h4, .h5, .h6 {
+    font-family: $font-family-accent;
+    text-transform: uppercase;
+}
+
+.fstyle-1 {
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    font-size: $font-size-large;
+    margin: 0;
+    padding: 6px 10px;
+    text-transform: uppercase;
+}

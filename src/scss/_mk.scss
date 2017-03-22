@@ -1,4 +1,8 @@
 
+.mk-sm-root {
+    margin: $grid-gutter-width 0;
+}
+
 .mk-sm-root,
 .mk-sm-shadow {
     display: block;
@@ -9,5 +13,11 @@
 }
 
 .mk-sm-trigger {
+    @include transition(all 0.5s);
     border-color: #fff;
+
+    &.focus {
+        background: rgba(0, 0, 0, 0.4);
+        color: #fff;
+    }
 }
