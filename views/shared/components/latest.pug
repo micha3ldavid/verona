@@ -4,11 +4,13 @@ include ../../mixins/card.pug
 - var length = latest.length - 1;
 - var limit  = length - 3;
 
-section
-    h2.h3
-        | Latest
-    ul.list-unstyled.row
-        while length > limit
-            li.col-sm-4
-                +card(latest[length])
-            - length--;
+section.panel
+    header.panel-heading
+        h2.panel-title
+            | Latest
+    div.panel-body
+        ul.list-unstyled.row
+            while length > limit
+                li.col-sm-4
+                    +card(latest[length])
+                - length--;

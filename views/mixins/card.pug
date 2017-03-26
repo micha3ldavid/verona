@@ -4,9 +4,10 @@ mixin card (details)
         div.card-figure
             img.card-img(src=details.thumbnail, alt=details.name)
             a.card-link(href=details.path, title="View details for " + details.name)
-        h3.card-title
-            | #{details.name}
-        p.card-desc
-            | #{details.desc}
-        a.card-details(href=details.path, title="View details for " + details.name)
-            | View Details
+        div.card-details
+            h3.card-title
+                | #{details.name}
+            p.card-desc
+                | #{details.desc}
+            a.card-link(href=details.path, title="View details for " + details.name)
+                | View Details

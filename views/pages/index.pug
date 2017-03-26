@@ -2,14 +2,4 @@
 extends ../shared/layouts/base
 
 block content
-    section.panel
-        header.panel-heading
-            h2.panel-title
-                | Latest
-        div.panel-body
-            div.row
-                each article in latest
-                    each item in article.series
-                        div.col-sm-4
-                            img.img-responsive(src=item)
-                                //- include ../shared/components/latest
+    include ../shared/components/latest
