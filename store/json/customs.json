@@ -10,8 +10,11 @@
             "path": "/details/customs/cry-baby-die-baby",
             "price": 300,
             "currency": "USD",
-            "thumbnail": "/dist/img/cards/lily.jpg",
-            "series": []
+            "thumbnail": "/dist/img/customs/cry/cry-1.jpg",
+            "series": [
+                "/dist/img/customs/cry/cry-1.jpg",
+                "/dist/img/customs/cry/cry-2.jpg"
+            ]
         },
         {
             "id": "0f317534-4033-400b-b1b5-394f7d47afbe",
@@ -21,8 +24,11 @@
             "path": "/details/customs/neon-leopard-party",
             "price": 400,
             "currency": "USD",
-            "thumbnail": "/dist/img/cards/lily.jpg",
-            "series": []
+            "thumbnail": "/dist/img/customs/synth/synth-1.jpg",
+            "series": [
+                "/dist/img/customs/synth/synth-1.jpg",
+                "/dist/img/customs/synth/synth-2.jpg"
+            ]
         },
         {
             "id": "2776e1c9-af15-47e0-89f3-f25f8df5e73b",
@@ -32,8 +38,12 @@
             "path": "/details/customs/lily-of-the-valley",
             "price": 600,
             "currency": "USD",
-            "thumbnail": "/dist/img/cards/lily.jpg",
-            "series": []
+            "thumbnail": "/dist/img/customs/lily/lily-1.jpg",
+            "series": [
+                "/dist/img/customs/lily/lily-1.jpg",
+                "/dist/img/customs/lily/lily-2.jpg",
+                "/dist/img/customs/lily/lily-3.jpg"
+            ]
         }
     ]
 }
