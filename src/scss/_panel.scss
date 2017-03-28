@@ -1,22 +1,9 @@
+//---------------------
+// Panels
+//---------------------
 
 .panel {
     padding: $grid-gutter-width;
-
-    &.panel-bg {
-        background-color: #333;
-        background-repeat: no-repeat;
-        background-size: auto;
-        background-position: bottom left;
-        color: #fff;
-
-        @media all and (orientation: portrait) {
-            background-size: auto 100%;
-        }
-    }
-
-    &.panel-customs {
-        background-image: url('/dist/img/bg/customs-form.jpg');
-    }
 }
 
 .panel-title {
@@ -33,4 +20,24 @@
 
 .panel-body {
     padding: $grid-gutter-width 0 0;
+}
+
+//----------------------
+// Panel BG
+//----------------------
+
+.panel-bg {
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom left;
+    color: #fff;
+
+    &.panel-customs {
+        background-image: url('/dist/img/bg/customs-form.jpg');
+    }
+
+    @media all and (orientation: portrait) {
+        background-size: auto 100%;
+    }
 }

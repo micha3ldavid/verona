@@ -10,7 +10,7 @@ block content
                 | One-of-a-kind pieces
                 br
                 | made to fit your individual style.
-
+    include ../shared/components/latest
     section.panel
         header.panel-heading
             h2.h3.panel-title
@@ -75,7 +75,7 @@ block content
                             input.form-control(type="text", name="email", placeholder=mailer.params.email)
                         div.col-sm-6
                             p.fstyle-1
-                                | And I'm interested in
+                                | And I'm interested in your
                             div.mk-sm-root
                                 select.mk-sm(name="type")
                                     each type, i in mailer.params.types

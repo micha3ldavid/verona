@@ -2044,11 +2044,11 @@ a.label:hover, a.label:focus {
   padding-left: 0;
   list-style: none; }
 
-.clearfix:before, #footer .promo-list:before, .list-steps:before, .clearfix:after, #footer .promo-list:after, .list-steps:after {
+.clearfix:before, #footer .promo-list:before, .list-steps:before, .article:before, .clearfix:after, #footer .promo-list:after, .list-steps:after, .article:after {
   content: " ";
   display: table; }
 
-.clearfix:after, #footer .promo-list:after, .list-steps:after {
+.clearfix:after, #footer .promo-list:after, .list-steps:after, .article:after {
   clear: both; }
 
 .center-block {
@@ -2477,9 +2477,9 @@ h1, h2, h3,
 h4, h5, h6,
 .h1, .h2, .h3,
 .h4, .h5, .h6 {
-  font-family: "Gotham", Futura, sans-serif;
+  font-family: "Gotham SSm", Futura, sans-serif;
   text-transform: uppercase;
-  font-weight: 400; }
+  font-weight: 500; }
 
 .fstyle-1 {
   background: #000;
@@ -2561,10 +2561,11 @@ html body button {
 .card-figure {
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  border: 2px solid #000;
   overflow: hidden;
   position: relative;
-  /* image format should always be 4:6 */
-  padding-top: 120%; }
+  padding-top: 118%;
+  /* image format should always be 4:6 */ }
   .card-figure .card-img {
     position: absolute;
     top: 0;
@@ -2634,11 +2635,6 @@ a.social {
 .list-nav {
   margin: 0; }
 
-.list-nav > li {
-  counter-increment: step-counter; }
-  .list-nav > li > a:before {
-    content: "0" counter(step-counter) "/ "; }
-
 .list-steps {
   margin: 0; }
 
@@ -2649,9 +2645,11 @@ a.social {
   position: relative;
   width: 50%; }
   .list-steps > .step:nth-child(odd) {
-    padding-right: 15px; }
+    padding-right: 30px; }
+    .list-steps > .step:nth-child(odd):before {
+      right: 30px; }
   .list-steps > .step:nth-child(even) {
-    padding-left: 15px; }
+    padding-left: 30px; }
   .list-steps > .step:before {
     background: #fff;
     border: 1px solid #333;
@@ -2664,11 +2662,12 @@ a.social {
     position: absolute;
     right: 0;
     text-align: center;
-    top: 20px;
+    top: 16px;
     width: 40px; }
     @media all and (max-width: 480px) {
       .list-steps > .step:before {
-        top: 8px; } }
+        top: 15px;
+        right: 0 !important; } }
   @media all and (max-width: 480px) {
     .list-steps > .step {
       float: none;
@@ -2678,26 +2677,20 @@ a.social {
       width: 100%; } }
 
 .list-steps .step-heading {
-  border-bottom: 1px solid #333; }
+  border-bottom: 1px solid #333;
+  padding: 10px 0; }
+
+.list-steps .step-title {
+  font-size: 16px;
+  margin: 0; }
 
 .list-steps .step-body {
-  padding: 15px 0 0;
+  padding: 20px 0 0;
   font-weight: 300;
   line-height: 1.6; }
 
 .panel {
   padding: 30px; }
-  .panel.panel-bg {
-    background-color: #333;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: bottom left;
-    color: #fff; }
-    @media all and (orientation: portrait) {
-      .panel.panel-bg {
-        background-size: auto 100%; } }
-  .panel.panel-customs {
-    background-image: url("/dist/img/bg/customs-form.jpg"); }
 
 .panel-title {
   background: #1c1b1a;
@@ -2712,6 +2705,48 @@ a.social {
 
 .panel-body {
   padding: 30px 0 0; }
+
+.panel-bg {
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom left;
+  color: #fff; }
+  .panel-bg.panel-customs {
+    background-image: url("/dist/img/bg/customs-form.jpg"); }
+  @media all and (orientation: portrait) {
+    .panel-bg {
+      background-size: auto 100%; } }
+
+.article-figure,
+.article-details {
+  float: left;
+  width: 50%; }
+
+.article-figure {
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  border: 5px solid #000; }
+
+.article-details {
+  padding: 0 0 0 30px; }
+
+.article-title {
+  border-bottom: 1px solid #000;
+  padding: 0 0 15px 0;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0; }
+
+.article-desc {
+  padding: 15px 0; }
+
+.article-dl {
+  padding: 15px 0; }
+
+.article-dl dt {
+  font-size: 14px;
+  text-transform: uppercase; }
 
 .banner {
   background-color: #252525;

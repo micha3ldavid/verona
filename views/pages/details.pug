@@ -2,9 +2,17 @@
 extends ../shared/layouts/base
 
 block content
-    div.container-fluid
-        h1 #{details.name}
-        p #{details.desc}
-        dl
-            dt Price
-            dd #{details.price} #{details.currency}
+    section.panel
+        header.panel-heading
+            h2.panel-title #{details.name}
+        div.panel-body
+            div.article
+                div.article-figure
+                    img.img-responsive(src=details.series[0], alt=details.name)
+                div.article-details
+                    h3.article-title
+                        | Details
+                    p.article-desc #{details.desc}
+                    dl.article-dl
+                        dt Price
+                        dd #{details.price} #{details.currency}
