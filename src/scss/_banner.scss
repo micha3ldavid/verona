@@ -1,6 +1,6 @@
 
 .banner {
-    background-color: #252525;
+    background-color: $gray-1;
     overflow: hidden;
     padding-top: 52%;
     position: relative;
@@ -14,9 +14,11 @@
 }
 
 .banner-content {
-    color: #fff;
+    color: $font-color-inverse;
     left: $grid-gutter-width;
+    right: $grid-gutter-width;
     position: absolute;
+    text-align: center;
     text-shadow: 0 0 10px #000;
     top: 50%;
     transform: translateY(-50%);
@@ -28,15 +30,15 @@
 }
 
 .banner-subtitle {
-    font-size: 32px;
+    font-size: $font-size-h1;
 }
 
 .banner-title {
-    font-size: 62px;
+    font-size: $font-size-jumbo;
 }
 
 .banner-body {
-    font-size: 18px;
+    font-size: $font-size-large;
 }
 
 .banner-title,
@@ -46,41 +48,41 @@
 }
 
 .banner-body a {
-    color: #fff;
+    color: $font-color-inverse;
 
     &:hover,
     &:active,
     &:focus {
-        color: #fff;
+        color: $font-color-inverse;
     }
 }
 
 @media all and (max-width: $screen-sm-min) {
 
     .banner-title {
-        font-size: 42px;
+        font-size: $font-size-h1;
     }
 
     .banner-subtitle {
-        font-size: 28px;
+        font-size: $font-size-h2;
     }
 
     .banner-body {
-        font-size: 16px;
+        font-size: $font-size-h5;
     }
 }
 
 @media all and (max-width: $screen-xs-min) {
 
     .banner-title {
-        font-size: 34px;
+        font-size: $font-size-h1;
     }
 
     .banner-subtitle {
-        font-size: 22px;
+        font-size: $font-size-h3;
     }
 
     .banner-body {
-        font-size: 16px;
+        font-size: $font-size-h5;
     }
 }

@@ -14,10 +14,11 @@
 
 .mk-sm-trigger {
     @include transition(all 0.5s);
-    border-color: #fff;
+    border-color: $font-color-inverse;
+    border-width: 0 0 2px 0;
 
     &.focus {
         background: rgba(0, 0, 0, 0.4);
-        color: #fff;
+        color: $font-color-inverse;
     }
 }

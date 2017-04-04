@@ -10,8 +10,8 @@ h4, h5, h6,
 }
 
 .fstyle-1 {
-    background: #000;
-    color: #fff;
+    background: $theme-inverse;
+    color: $font-color-inverse;
     display: inline-block;
     font-size: $font-size-large;
     margin: 0;

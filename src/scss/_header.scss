@@ -4,8 +4,10 @@
 // ------------------------------
 
 #header {
-    background: $theme-light-bg;
-    border-bottom: 1px solid #dfdfdf;
+    @include box-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+    background: $theme-bg;
+    border-top: 3px solid $theme-inverse;
+    border-bottom: 1px solid $gray-4;
     height: 75px;
     position: fixed;
     top: 0;
@@ -15,12 +17,12 @@
 
 #header .title {
     float: left;
-    margin: 15px $grid-gutter-width;
+    margin: ($grid-gutter-width / 2) $grid-gutter-width;
     text-align: center;
 }
 
 #header .logo {
-    background: #000;
+    background: $theme-inverse;
     width: 150px;
 }
 
@@ -47,13 +49,13 @@
     font-size: $font-size-small;
     font-weight: 600;
     letter-spacing: 0.6px;
-    padding: 30px 0;
+    padding: $grid-gutter-width 0;
     text-transform: uppercase;
 
     &:hover,
     &:active,
     &:focus {
-        color: $brand-primary;
+        color: $theme-primary;
     }
 }
 

@@ -30,12 +30,13 @@
     }
 
     &:before {
-        background: #fff;
-        border: 1px solid #333;
+        background: $theme-bg;
+        border: 2px solid $gray-1;
         border-radius: 80%;
-        color: #333;
+        color: $gray-1;
         content: '0' counter(step-counter);
         font-size: $font-size-large;
+        font-weight: 400;
         height: 40px;
         padding: 6px 0 0 0;
         position: absolute;
@@ -60,7 +61,7 @@
 }
 
 .list-steps .step-heading {
-    border-bottom: 1px solid #333;
+    border-bottom: 2px solid $gray-1;
     padding: 10px 0;
 }
 

@@ -7,15 +7,15 @@
 }
 
 .panel-title {
-    background: #1c1b1a;
-    color: #fff;
+    background: $gray-1;
+    color: $gray-5;
     display: inline-block;
     font-size: $font-size-large;
     font-weight: 300;
     margin: 0;
-    padding: 10px 30px;
+    padding: 10px $grid-gutter-width;
     position: relative;
-    left: -30px;
+    left: ($grid-gutter-width * -1);
 }
 
 .panel-body {
@@ -27,11 +27,11 @@
 //----------------------
 
 .panel-bg {
-    background-color: #333;
+    background-color: $gray-1;
     background-repeat: no-repeat;
     background-size: auto;
     background-position: bottom left;
-    color: #fff;
+    color: $font-color-inverse;
 
     &.panel-customs {
         background-image: url('/dist/img/bg/customs-form.jpg');

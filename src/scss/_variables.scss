@@ -1,30 +1,36 @@
 
 $fa-font-path: "../fonts";
 
-$theme-light-bg: #fdfdfd;
-
-// bootstrap
-
-$brand-primary: #ac0000;
-$brand-secondary: #004a4a;
-
-$gray-base:     #080808;
-$gray-darker:   #252525;
-$gray-dark:     #565656;
-$gray:          #878787;
-$gray-light:    #a5a5a5;
-$gray-lighter:  #d6d6d6;
-
-$gray-1: #080808;
-$gray-2: #252525;
-
 $font-family-sans-serif: 'Gotham SSm', 'Helvetica Neue', Helvetica, Arial;
 $font-family-accent: 'Gotham SSm', Futura, sans-serif;
+
+$theme-bg: #fdfdfd;
+$theme-inverse: #000000;
+$theme-primary: crimson;
+$theme-secondary: cadetblue;
+
+$theme-fb: #3B5998;
+$theme-tw: #55ACEE;
+$theme-ig: #E12F67;
+
+$font-color: #333333;
+$font-color-inverse: #ffffff;
+
+$gray-base: #080808;
+
+$gray-1: #252525;
+$gray-2: #565656;
+$gray-3: #878787;
+$gray-4: #a5a5a5;
+$gray-5: #d6d6d6;
+$gray-6: #f7f7f7;
 
 $font-size-base:  16px;
 $font-size-large: 18px;
 $font-size-small: 14px;
+$font-size-xsmall: 12px;
 
+$font-size-jumbo: 52px;
 $font-size-h1: 30px;
 $font-size-h2: 26px;
 $font-size-h3: 22px;
@@ -32,13 +38,28 @@ $font-size-h4: 18px;
 $font-size-h5: 16px;
 $font-size-h6: 14px;
 
+//
+// bootstrap overrides
+//----------------------------------------
+
+$brand-primary: 	$theme-primary;
+$brand-secondary: 	$theme-secondary;
+
+$gray-darker:   $gray-1;
+$gray-dark:     $gray-2;
+$gray:          $gray-3;
+$gray-light:    $gray-4;
+$gray-lighter:  $gray-5;
+
 $border-radius-base: 0;
 
 $btn-primary-color:  $gray-2;
 $btn-primary-bg:     transparent;
 $btn-primary-border: $gray-2;
 
+//
 // mk-ui
+//----------------------------------
 
 $mk-primary: $brand-primary;
 $mk-secondary: $brand-primary;

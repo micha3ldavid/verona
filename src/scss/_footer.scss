@@ -1,7 +1,8 @@
 
 #footer {
-    background: #bab9b5;
-    color: #252525;
+    background: $gray-1;
+    border-top: 1px solid $gray-5;
+    color: $gray-5;
     font-size: $font-size-h6;
 }
 
@@ -21,7 +22,6 @@
 }
 
 @media all and (max-width: $screen-xs-max) {
-
     #footer .promo-list .promo {
         width: 50%;
 
@@ -33,7 +33,6 @@
 }
 
 @media all and (max-width: $screen-xs-min) {
-
     #footer .promo-list .promo {
         float: none;
         width: auto;

@@ -8,7 +8,7 @@
     &:hover,
     &:active,
     &:focus {
-        background: $gray-2;
-        color: white;
+        background: $gray-1;
+        color: $font-color-inverse;
     }
 }

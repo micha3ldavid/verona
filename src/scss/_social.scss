@@ -1,6 +1,6 @@
 
 a.social {
-    color: $gray-2;
+    color: $gray-1;
 
     .fa {
         @include transition(color 0.5s);
@@ -11,13 +11,13 @@ a.social {
     &:active {
 
         .fa-facebook {
-            color: #3B5998;
+            color: $theme-fb;
         }
         .fa-twitter {
-            color: #55ACEE;
+            color: $theme-tw;
         }
         .fa-instagram {
-            color: #E12F67;
+            color: $theme-ig;
         }
     }
 }

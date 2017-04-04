@@ -1,6 +1,6 @@
 
 var statics = require('./static'),
-    controllers = require('./controllers');
+	controllers = require('./controllers');
 
 module.exports = function ( express, app ) {
   statics(express, app);

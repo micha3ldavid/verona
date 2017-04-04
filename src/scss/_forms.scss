@@ -3,31 +3,31 @@
 .form-control {
     @include transition(all 0.5s);
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 2px solid $font-color-inverse;
     border-radius: 0;
-    border-width: 0 0 1px 0;
-    color: #fff;
+    border-width: 0 0 2px 0;
+    color: $font-color-inverse;
     margin: $grid-gutter-width 0;
 
     &:focus {
         background: rgba(0, 0, 0, 0.4);
-        border-color: $brand-primary;
+        border-color: $theme-primary;
         box-shadow: none;
         outline: 0;
     }
 
     &::-webkit-input-placeholder {
-        color: #ccc;
+        color: $gray-5;
         font-style: italic;
     }
 
     &::-ms-input-placeholder {
-        color: #ccc;
+        color: $gray-5;
         font-style: italic;
     }
 
     &::-moz-placeholder {
-        color: #ccc;
+        color: $gray-5;
         font-style: italic;
     }
 }

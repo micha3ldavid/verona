@@ -3,19 +3,19 @@ var store = require('../../store');
 
 module.exports = function (express, app) {
 
-    app.get('/vision', function (req, res) {
+	app.get('/vision', function (req, res) {
 
-        store.pull(['views', 'navigations', 'vision'], function (result) {
+		store.pull(['views', 'navigations', 'vision'], function (result) {
 
-            var data = {
-                page: result.views.vision,
-                navigations: result.navigations,
-                vision: {
-                    markdown: result.vision
-                }
-            };
+			var data = {
+				page: result.views.vision,
+				navigations: result.navigations,
+				vision: {
+					markdown: result.vision
+				}
+			};
 
-            res.render(data.page.view, data);
-        });
-    });
+			res.render(data.page.view, data);
+		});
+	});
 };
