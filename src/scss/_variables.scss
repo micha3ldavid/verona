@@ -18,8 +18,8 @@ $font-color-inverse: #ffffff;
 
 $gray-base: #080808;
 
-$gray-1: #252525;
-$gray-2: #565656;
+$gray-1: $gray-base;
+$gray-2: #151515;
 $gray-3: #878787;
 $gray-4: #a5a5a5;
 $gray-5: #d6d6d6;
@@ -52,6 +52,8 @@ $gray-light:    $gray-4;
 $gray-lighter:  $gray-5;
 
 $border-radius-base: 0;
+
+$text-color: $gray-1;
 
 $btn-primary-color:  $gray-2;
 $btn-primary-bg:     transparent;

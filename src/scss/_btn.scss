@@ -1,14 +1,28 @@
 
 .btn {
-    text-transform: uppercase;
+	text-transform: uppercase;
+	font-size: $font-size-small;
+	font-weight: 500;
+}
+
+.btn-inverse {
+	border: 1px solid $theme-inverse;
+	background-color: $theme-inverse;
+	color: $gray-5;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $theme-primary;
+	}
 }
 
 .btn-primary {
 
-    &:hover,
-    &:active,
-    &:focus {
-        background: $gray-1;
-        color: $font-color-inverse;
-    }
+	&:hover,
+	&:active,
+	&:focus {
+		background: $gray-1;
+		color: $font-color-inverse;
+	}
 }

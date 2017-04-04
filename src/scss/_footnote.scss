@@ -1,23 +1,23 @@
 
 .footnote {
-    background: $gray-base;
-    color: $gray-5;
-    font-size: $font-size-xsmall;
-    padding: 10px $grid-gutter-width;
-    text-align: center;
+	background: $theme-inverse;
+	color: $gray-5;
+	font-size: $font-size-xsmall;
+	padding: 10px $grid-gutter-width;
+	text-align: center;
 }
 
 .footnote-nav {
-    @extend .list-inline;
-    margin: 0;
+	@extend .list-inline;
+	margin: 0;
 }
 
 .footnote-nav a {
-    color: $font-color-inverse;
+	color: $font-color-inverse;
 
-    &:hover,
-    &:focus,
-    &:active {
-        color: $theme-primary;
-    }
+	&:hover,
+	&:focus,
+	&:active {
+		color: $theme-primary;
+	}
 }

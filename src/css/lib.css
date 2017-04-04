@@ -226,7 +226,7 @@ body {
   font-family: "Gotham SSm", "Helvetica Neue", Helvetica, Arial;
   font-size: 16px;
   line-height: 1.42857;
-  color: #565656;
+  color: #080808;
   background-color: #fff; }
 
 input,
@@ -1151,7 +1151,7 @@ legend {
   margin-bottom: 22px;
   font-size: 24px;
   line-height: inherit;
-  color: #565656;
+  color: #151515;
   border: 0;
   border-bottom: 1px solid #e5e5e5; }
 
@@ -1550,7 +1550,7 @@ select[multiple].input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #969696; }
+  color: #484848; }
 
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -1711,29 +1711,29 @@ fieldset[disabled] a.btn {
     background-color: #333; }
 
 .btn-primary {
-  color: #565656;
+  color: #151515;
   background-color: transparent;
-  border-color: #565656; }
+  border-color: #151515; }
   .btn-primary:focus, .btn-primary.focus {
-    color: #565656;
+    color: #151515;
     background-color: transparent;
-    border-color: #161616; }
+    border-color: black; }
   .btn-primary:hover {
-    color: #565656;
+    color: #151515;
     background-color: transparent;
-    border-color: #373737; }
+    border-color: black; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
-    color: #565656;
+    color: #151515;
     background-color: transparent;
-    border-color: #373737; }
+    border-color: black; }
     .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
     .open > .btn-primary.dropdown-toggle:hover,
     .open > .btn-primary.dropdown-toggle:focus,
     .open > .btn-primary.dropdown-toggle.focus {
-      color: #565656;
+      color: #151515;
       background-color: transparent;
-      border-color: #161616; }
+      border-color: black; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     background-image: none; }
@@ -1742,10 +1742,10 @@ fieldset[disabled] a.btn {
   fieldset[disabled] .btn-primary:focus,
   fieldset[disabled] .btn-primary.focus {
     background-color: transparent;
-    border-color: #565656; }
+    border-color: #151515; }
   .btn-primary .badge {
     color: transparent;
-    background-color: #565656; }
+    background-color: #151515; }
 
 .btn-success {
   color: #fff;
@@ -2335,7 +2335,7 @@ body.noflow {
   margin-left: 15px; }
 
 #nav-main li a {
-  color: #565656;
+  color: #080808;
   display: block;
   font-size: 14px;
   font-weight: 600;
@@ -2351,13 +2351,13 @@ body.noflow {
   top: 28px; }
 
 #nav-social li a {
-  color: #565656; }
+  color: #080808; }
 
 #nav-social li a .fa {
   font-size: 22px; }
 
 #btn-nav-mobile {
-  color: #565656;
+  color: #151515;
   opacity: 0;
   outline: 0;
   padding: 0;
@@ -2378,7 +2378,7 @@ body.noflow {
     opacity: 1; } }
 
 #footer {
-  background: #252525;
+  background: #151515;
   border-top: 1px solid #d6d6d6;
   color: #d6d6d6;
   font-size: 14px; }
@@ -2415,7 +2415,7 @@ body.noflow {
   transition: opacity 0.5s;
   background: #d6d6d6;
   bottom: 0;
-  color: #565656;
+  color: #151515;
   left: 0;
   opacity: 1;
   overflow: auto;
@@ -2433,7 +2433,7 @@ body.noflow {
   border-bottom: 1px solid #878787; }
 
 #nav-mobile-nav li a {
-  color: #565656;
+  color: #151515;
   display: block;
   font-size: 16px;
   font-weight: 600;
@@ -2490,7 +2490,8 @@ h4, h5, h6,
   background: #000000;
   color: #ffffff;
   display: inline-block;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 500;
   margin: 0;
   padding: 6px 10px;
   text-transform: uppercase; }
@@ -2557,10 +2558,19 @@ html body button {
   content: ""; }
 
 .btn {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500; }
+
+.btn-inverse {
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: #d6d6d6; }
+  .btn-inverse:hover, .btn-inverse:active, .btn-inverse:focus {
+    color: crimson; }
 
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-  background: #252525;
+  background: #080808;
   color: #ffffff; }
 
 .card-figure {
@@ -2604,7 +2614,7 @@ html body button {
     margin: 0 0 5px 0; }
 
 a.social {
-  color: #252525; }
+  color: #080808; }
   a.social .fa {
     -webkit-transition: color 0.5s;
     -o-transition: color 0.5s;
@@ -2622,7 +2632,7 @@ a.social {
   text-transform: uppercase; }
 
 .footnote {
-  background: #080808;
+  background: #000000;
   color: #d6d6d6;
   font-size: 12px;
   padding: 10px 30px;
@@ -2656,9 +2666,9 @@ a.social {
     padding-left: 30px; }
   .list-steps > .step:before {
     background: #fdfdfd;
-    border: 2px solid #252525;
+    border: 2px solid #080808;
     border-radius: 80%;
-    color: #252525;
+    color: #080808;
     content: "0" counter(step-counter);
     font-size: 18px;
     font-weight: 400;
@@ -2682,7 +2692,7 @@ a.social {
       width: 100%; } }
 
 .list-steps .step-heading {
-  border-bottom: 2px solid #252525;
+  border-bottom: 2px solid #080808;
   padding: 10px 0; }
 
 .list-steps .step-title {
@@ -2698,11 +2708,11 @@ a.social {
   padding: 30px; }
 
 .panel-title {
-  background: #252525;
-  color: #d6d6d6;
+  background: #080808;
+  color: #f7f7f7;
   display: inline-block;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
   margin: 0;
   padding: 10px 30px;
   position: relative;
@@ -2712,7 +2722,7 @@ a.social {
   padding: 30px 0 0; }
 
 .panel-bg {
-  background-color: #252525;
+  background-color: #080808;
   background-repeat: no-repeat;
   background-size: auto;
   background-position: bottom left;
@@ -2754,7 +2764,7 @@ a.social {
   text-transform: uppercase; }
 
 .banner {
-  background-color: #252525;
+  background-color: #080808;
   overflow: hidden;
   padding-top: 52%;
   position: relative; }
