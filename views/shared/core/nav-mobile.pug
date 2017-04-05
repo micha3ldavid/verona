@@ -6,6 +6,11 @@ div#nav-mobile(aria-hidden="true")
                 a(href=page.path) #{page.label}
 
     div#nav-mobile-promos
-        include ../components/collaborate
-        include ../components/commission
-        include ../components/connect
+        div.clearfix
+            div.col
+                include ../components/collaborate
+            div.col
+                include ../components/commission
+        div.clearfix
+            div.col
+                include ../components/connect

@@ -1,10 +1,10 @@
 
-div.footnote.clearfix
-    div.pull-left
-        ul.footnote-nav
+div.footnote
+    div.footnote-nav
+        ul.list-inline
             each item in navigations.footer
                 li
                     a(href=item.path) #{item.label}
 
-    div.pull-right
+    div.footnote-stamp
         | &copy; Copyright 2017 Juliano Creative

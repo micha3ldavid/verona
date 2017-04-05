@@ -2,11 +2,11 @@
 .btn {
 	text-transform: uppercase;
 	font-size: $font-size-small;
-	font-weight: 500;
+	line-height: 2;
 }
 
 .btn-inverse {
-	border: 1px solid $theme-inverse;
+	border: 1px solid $gray-3;
 	background-color: $theme-inverse;
 	color: $gray-5;
 
