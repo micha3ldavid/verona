@@ -7,7 +7,7 @@
         "customs":
         {
             "action": "/mail",
-            "from": "\"Juliano Mailer\" <transparent.julianocreative@gmail.com>",
+            "from": "\"Juliano Services\" <transparent.julianocreative@gmail.com>",
             "to": "julianocreative@gmail.com",
             "subject": "Customs Request",
             "params": {

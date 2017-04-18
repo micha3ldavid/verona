@@ -6,10 +6,11 @@ block content
         img.banner-img(src=page.banner.img, alt=page.banner.alt)
         div.banner-content
             h2.banner-title #{page.banner.title}
-            div.banner-body
-                | One-of-a-kind pieces
-                br
-                | made to fit your individual style.
+            div.banner-body.text-italic
+                | "Ordering a custom is kind of like getting a tattoo.
+                | You give him an idea or pictures of what you want.
+                | You choose what style of clothing, even what brand name.
+                | He take it from there. The rest is magic."
     include ../shared/components/latest
     section.panel
         header.panel-heading
@@ -55,6 +56,10 @@ block content
                         p
                             | Once finished, your order will be shipped along with any special care instructions necessary.
                             | I'll also notify you when your order ships so you may track it and know when to expect it.
+                            br
+                            br
+                            span.text-italic
+                                | *Most items can be machine washed and dried as normal.
 
     section.panel.panel-inverse
         header.panel-heading.sr-only

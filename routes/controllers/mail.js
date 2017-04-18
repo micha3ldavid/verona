@@ -60,7 +60,7 @@ module.exports = function (express, app) {
 			params.ref2 = params.ref2 !== params.ref1 && params.ref2 || '';
 
 			if (!params.email || req.body.trickery !== 'cR3a7e') {
-
+				console.info('no email or trickery did not match');
 				transport.close();
 				res.redirect('/mail/error');
 				return;
@@ -75,6 +75,7 @@ module.exports = function (express, app) {
 			function (err, info) {
 
 				if (err) {
+					console.info('first email', err);
 					transport.close();
 					res.redirect('/mail/error');
 					return;
@@ -88,6 +89,7 @@ module.exports = function (express, app) {
 						html: mailcontent(params)
 					},
 					function (err, info) {
+						console.info('second email', err);
 						transport.close();
 						res.redirect(err ? '/mail/error' : '/mail/sent');
 					}
