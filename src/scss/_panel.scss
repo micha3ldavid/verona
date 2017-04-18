@@ -22,22 +22,6 @@
     padding: $grid-gutter-width 0 0;
 }
 
-//----------------------
-// Panel BG
-//----------------------
-
-.panel-bg {
-    background-color: $gray-1;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: bottom left;
-    color: $font-color-inverse;
-
-    &.panel-customs {
-        background-image: url('/dist/img/bg/customs-form.jpg');
-    }
-
-    @media all and (orientation: portrait) {
-        background-size: auto 100%;
-    }
+.panel.panel-inverse {
+    background-color: $gray-6;
 }

@@ -5,6 +5,7 @@ var home =      require('./controllers/home'),
 	contact =   require('./controllers/contact'),
 	customs =   require('./controllers/customs'),
 	terms =     require('./controllers/terms'),
+	mail = 		require('./controllers/mail'),
 	errors =    require('./controllers/errors');
 
 module.exports = function (express, app) {
@@ -32,6 +33,10 @@ module.exports = function (express, app) {
 	// CUSTOMS PAGE
 	// ----------------------------------
 	customs(express, app);
+	//
+	// MAIL API/PAGES
+	// ----------------------------------
+	mail(express, app);
 	//
 	// 404 & 500
 	// ----------------------------------

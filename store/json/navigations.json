@@ -2,15 +2,15 @@
     "main":
     [
         {
-            "name": "vision",
-            "label": "Vision",
-            "path": "/vision",
-            "classname": ""
-        },
-        {
             "name": "customs",
             "label": "Customs",
             "path": "/customs",
+            "classname": ""
+        },
+        {
+            "name": "contact",
+            "label": "Contact",
+            "path": "/contact",
             "classname": ""
         }
     ],

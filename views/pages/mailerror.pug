@@ -1,0 +1,17 @@
+
+extends ../shared/layouts/base
+
+block content
+    section.panel
+        header.panel-heading
+            h2.panel-title
+                | Unable to Send Request
+        div.panel-body
+            p
+                | We were unable to send your request.
+                | It's possible the issue is because your internet service is behind a proxy disabling our ability to send email.
+                | That or we think you're a robot.
+                | You can try again using another internet (or wifi) service, call us, or check back at a later time.
+            p
+                a(href="/customs")
+                    | Return to Customs Page

@@ -2,4 +2,10 @@
 extends ../shared/layouts/base
 
 block content
+    section.banner
+        img.banner-img(src=page.banner.img, alt=page.banner.alt)
+        div.banner-content
+            h3.banner-subtitle #{page.banner.subtitle}
+            h2.banner-title #{page.banner.title}
+            div.banner-body #{page.banner.desc}
     include ../shared/components/latest

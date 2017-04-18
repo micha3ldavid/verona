@@ -3,37 +3,49 @@
 .form-control {
     @include transition(all 0.5s);
     background-color: transparent;
-    border: 2px solid $font-color-inverse;
+    border: 2px solid $gray-3;
     border-radius: 0;
     border-width: 0 0 2px 0;
-    color: $font-color-inverse;
+    box-shadow: none;
     margin: $grid-gutter-width 0;
 
-    &:focus {
-        background: rgba(0, 0, 0, 0.4);
-        border-color: $theme-primary;
-        box-shadow: none;
-        outline: 0;
-    }
-
     &::-webkit-input-placeholder {
-        color: $gray-5;
+        color: $gray-4;
         font-style: italic;
     }
 
     &::-ms-input-placeholder {
-        color: $gray-5;
+        color: $gray-4;
         font-style: italic;
     }
 
     &::-moz-placeholder {
-        color: $gray-5;
+        color: $gray-4;
         font-style: italic;
+    }
+
+    &:focus {
+        background: rgba(0, 0, 0, 0.4);
+        border-color: $theme-primary;
+        color: white;
+        outline: 0;
+
+        &::-webkit-input-placeholder {
+            color: $gray-5;
+        }
+
+        &::-ms-input-placeholder {
+            color: $gray-5;
+        }
+
+        &::-moz-placeholder {
+            color: $gray-5;
+        }
     }
 }
 
 textarea.form-control {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.1);
     resize: vertical;
 }
 

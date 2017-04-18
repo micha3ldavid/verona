@@ -45,7 +45,8 @@ gulp.task('concat', function () {
 		'./node_modules/mk-ui/dist/js/core.min.js',
 		'./node_modules/mk-ui/dist/js/selectmenu.min.js',
 		'./dist/js/mk-selectmenu.min.js',
-		'./dist/js/nav.min.js'
+		'./dist/js/nav.min.js',
+		'./dist/js/form.min.js'
 	])
 	.pipe(concat('lib.js'))
 	.pipe(gulp.dest('./dist/js'))

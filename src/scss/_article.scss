@@ -41,3 +41,16 @@
     font-size: $font-size-small;
     text-transform: uppercase;
 }
+
+@media all and (max-width: $screen-sm) {
+
+    .article-figure,
+    .article-details {
+        float: none;
+        width: 100%;
+    }
+
+    .article-details {
+        padding: $grid-gutter-width 0;
+    }
+}

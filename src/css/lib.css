@@ -2149,7 +2149,7 @@ a.label:hover, a.label:focus {
 
 .mk-sm-trigger {
   background: transparent;
-  color: #fff;
+  color: #080808;
   border-bottom: 1px solid crimson;
   position: relative; }
 
@@ -2308,7 +2308,7 @@ body.noflow {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1; }
+  z-index: 100; }
 
 #header .title {
   float: left;
@@ -2481,7 +2481,7 @@ h4, h5, h6,
 .h4, .h5, .h6 {
   font-family: "Gotham SSm", Futura, sans-serif;
   text-transform: uppercase;
-  font-weight: 500; }
+  font-weight: 400; }
 
 .fstyle-1 {
   background: #000000;
@@ -2498,28 +2498,34 @@ h4, h5, h6,
   -o-transition: all 0.5s;
   transition: all 0.5s;
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid #252525;
   border-radius: 0;
   border-width: 0 0 2px 0;
-  color: #ffffff;
+  box-shadow: none;
   margin: 30px 0; }
+  .form-control::-webkit-input-placeholder {
+    color: #a5a5a5;
+    font-style: italic; }
+  .form-control::-ms-input-placeholder {
+    color: #a5a5a5;
+    font-style: italic; }
+  .form-control::-moz-placeholder {
+    color: #a5a5a5;
+    font-style: italic; }
   .form-control:focus {
     background: rgba(0, 0, 0, 0.4);
     border-color: crimson;
-    box-shadow: none;
+    color: white;
     outline: 0; }
-  .form-control::-webkit-input-placeholder {
-    color: #d6d6d6;
-    font-style: italic; }
-  .form-control::-ms-input-placeholder {
-    color: #d6d6d6;
-    font-style: italic; }
-  .form-control::-moz-placeholder {
-    color: #d6d6d6;
-    font-style: italic; }
+    .form-control:focus::-webkit-input-placeholder {
+      color: #d6d6d6; }
+    .form-control:focus::-ms-input-placeholder {
+      color: #d6d6d6; }
+    .form-control:focus::-moz-placeholder {
+      color: #d6d6d6; }
 
 textarea.form-control {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.1);
   resize: vertical; }
 
 select.form-control {
@@ -2744,17 +2750,8 @@ a.social {
 .panel-body {
   padding: 30px 0 0; }
 
-.panel-bg {
-  background-color: #080808;
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: bottom left;
-  color: #ffffff; }
-  .panel-bg.panel-customs {
-    background-image: url("/dist/img/bg/customs-form.jpg"); }
-  @media all and (orientation: portrait) {
-    .panel-bg {
-      background-size: auto 100%; } }
+.panel.panel-inverse {
+  background-color: #f7f7f7; }
 
 .article-figure,
 .article-details {
@@ -2785,6 +2782,14 @@ a.social {
 .article-dl dt {
   font-size: 14px;
   text-transform: uppercase; }
+
+@media all and (max-width: 768px) {
+  .article-figure,
+  .article-details {
+    float: none;
+    width: 100%; }
+  .article-details {
+    padding: 30px 0; } }
 
 .banner {
   background-color: #080808;
@@ -2834,8 +2839,6 @@ a.social {
     color: #ffffff; }
 
 @media all and (max-width: 768px) {
-  .banner-title {
-    font-size: 30px; }
   .banner-subtitle {
     font-size: 26px; }
   .banner-body {
@@ -2870,8 +2873,8 @@ a.social {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  border-color: #ffffff;
+  border-color: #252525;
   border-width: 0 0 2px 0; }
   .mk-sm-trigger.focus {
     background: rgba(0, 0, 0, 0.4);
-    color: #ffffff; }
+    color: #080808; }

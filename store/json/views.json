@@ -12,7 +12,16 @@
         "name": "home",
         "view": "pages/index",
         "path": "/",
-        "title": "Home"
+        "title": "Home",
+        "banner": {
+            "img": "/dist/img/bg/home-banner.jpg",
+            "alt": "Fashionable woman in urban streetwear and biker jacket.",
+            "title": "Streetwear",
+            "subtitle": "Juliano",
+            "desc": "Traditional Artwork, Cut, and Sew on Streetwear.",
+            "link": "",
+            "linktext": ""
+        }
     },
 
     "customs": {
@@ -54,9 +63,10 @@
         "path": "/contact",
         "title": "Contact Us",
         "banner": {
-            "img": "/dist/img/bg/denver.jpg",
+            "img": "/dist/img/bg/contact-banner.jpg",
             "alt": "Denver RiNo District",
             "title": "Denver, Colorado",
+            "subtitle": "Headquarters",
             "desc": "",
             "link": "",
             "linktext": ""
@@ -69,6 +79,22 @@
         "view": "pages/terms",
         "path": "/terms",
         "title": "Terms and Conditions"
+    },
+
+    "mailsuccess": {
+        "id": "75064f8d-6aba-4299-9845-989d8d7c105e",
+        "name": "mail success",
+        "view": "pages/mailsuccess",
+        "path": "/mail/success",
+        "title": "Mail Sent"
+    },
+
+    "mailerror": {
+        "id": "f592e705-2421-4d51-9a3a-a0ccae97d069",
+        "name": "mail error",
+        "view": "pages/mailerror",
+        "path": "/mail/error",
+        "title": "Unable to send mail"
     },
 
     "404": {

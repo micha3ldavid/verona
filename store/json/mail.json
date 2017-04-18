@@ -6,8 +6,8 @@
         "pass": "]u%aR[\\/d`(k!9W}",
         "customs":
         {
-            "action": "/customs",
-            "from": "\"Juliano Services\" <transparent.julianocreative@gmail.com>",
+            "action": "/mail",
+            "from": "\"Juliano Mailer\" <transparent.julianocreative@gmail.com>",
             "to": "julianocreative@gmail.com",
             "subject": "Customs Request",
             "params": {

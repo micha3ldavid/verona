@@ -56,15 +56,12 @@ block content
                             | Once finished, your order will be shipped along with any special care instructions necessary.
                             | I'll also notify you when your order ships so you may track it and know when to expect it.
 
-        aside.small
-            | *Questions? Visit the Q&amp;A page.
-
-    section.panel.panel-bg.panel-customs
+    section.panel.panel-inverse
         header.panel-heading.sr-only
             h2.panel-title
-                | Customs Form
+                | Request A Custom
         div.panel-body
-            form(method="post", action=mailer.params.action)
+            form#customs-form(method="post", action="/mail")
                 fieldset.form-group
                     div.row
                         div.col-sm-6
@@ -75,7 +72,7 @@ block content
                             input.form-control(type="text", name="email", placeholder=mailer.params.email)
                         div.col-sm-6
                             p.fstyle-1
-                                | And I'm interested in your
+                                | And I'm interested in
                             div.mk-sm-root
                                 select.mk-sm(name="type")
                                     each type, i in mailer.params.types
@@ -87,5 +84,13 @@ block content
                 fieldset.form-group
                     textarea.form-control(name="details", rows="10", placeholder=mailer.params.details)
                 fieldset.form-group
-                    button.btn(type="submit")
+                    p.fstyle-1
+                        | I am not a robot
+                    div.row
+                        div.col-sm-6
+                            img(src="/dist/img/misc/trickery.png", alt="captcha text", width="150", style="margin-top: 15px;")
+                            input.form-control(type="text", name="trickery", placeholder="Enter Phrase Above")
+                        div.col-sm-6
+                fieldset.form-group
+                    button#submit.btn.btn-inverse(type="submit")
                         | Ready? Send My Request

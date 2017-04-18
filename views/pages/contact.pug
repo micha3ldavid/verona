@@ -5,8 +5,7 @@ block content
     section.banner
         img.banner-img(src=page.banner.img, alt=page.banner.alt)
         div.banner-content
-            h3.banner-subtitle
-                | Headquarters
+            h3.banner-subtitle #{page.banner.subtitle}
             h2.banner-title #{page.banner.title}
             div.banner-body
                 dl.dl
@@ -32,19 +31,23 @@ block content
                 | Specific Enquires
         div.panel-body
             p
-                | For questions on how to <strong>cop your own piece</strong>, visit our customs page or contact:
+                | For questions on how to <strong>cop your own piece</strong>,
+                | visit our&nbsp;
+                a(href="/customs")
+                    | customs
+                |&nbsp;page or contact:
                 br
-                a(href="mailto:info.julianocreative@gmail.com")
-                    | info.julianocreative@gmail.com
+                a(href="mailto:info.julianocreative@gmail.com?subject=Custom%20Order%20Enquire")
+                    | julianocreative@gmail.com
 
             p
                 | For questions about <strong>your order</strong>, contact:
                 br
-                a(href="mailto:customers.julianocreative@gmail.com")
+                a(href="mailto:customers.julianocreative@gmail.com?subject=Questions%20about%20Order%20#<your%20order%20number>")
                     | customers.julianocreative@gmail.com
 
             p
                 | For brands <strong>looking to collaborate</strong>, contact:
                 br
-                a(href="mailto:collab.julianocreative@gmail.com")
-                    | collab.julianocreative@gmail.com
+                a(href="mailto:julianocreative@gmail.com?subject=Possible%20Collaboration?")
+                    | julianocreative@gmail.com
