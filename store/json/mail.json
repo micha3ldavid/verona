@@ -1,13 +1,14 @@
 {
     "transport":
     {
-        "service": "gmail",
-        "user": "transport.julianocreative@gmail.com",
-        "pass": "]u%aR[\\/d`(k!9W}",
+        "host": "a2ls5.a2hosting.com",
+        "port": 465,
+        "user": "transporter@julianocreative.com",
+        "pass": "W&GXk/Jt,7#5j}\"}",
         "customs":
         {
             "action": "/mail",
-            "from": "\"Juliano Services\" <transparent.julianocreative@gmail.com>",
+            "from": "\"Juliano Services\" <transporter@julianocreative.com>",
             "to": "julianocreative@gmail.com",
             "subject": "Customs Request",
             "params": {
@@ -31,7 +32,7 @@
         },
         "collab":
         {
-            "from": "\"Juliano Mailer\" <transparent.julianocreative@gmail.com>",
+            "from": "\"Juliano Services\" <transporter@julianocreative.com>",
             "to": "julianocreative@gmail.com",
             "subject": "Collaboration Request",
             "params": {

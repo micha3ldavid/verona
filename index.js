@@ -1,4 +1,12 @@
+/*
 
+	nohup node my_app.js &
+	pkill node
+
+	T: W&GXk/Jt,7#5j}"}
+	Mask: a2ls5.a2hosting.com
+
+*/
 var express = require('express'),
 	middleware = require('./middleware/middleware'),
 	routes = require('./routes/route'),
